@@ -4,5 +4,5 @@
 
 LEXICON Nouns
 noun+N:noun    Cases   ;
-
+bad+N:bad Cases ;
 ! vim: set ft=xfst-lexc:
