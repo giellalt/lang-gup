@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE errors>
+
+<errors>
+
+  <defaults>
+    <default type="Grammar error">
+      <ids>
+        <re v="real-.*"/>
+        <e id="unreal-girjji"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Real-word error</title>
+        <title xml:lang="gup">Real-word error in gup (PLACEHOLDER)</title>
+      </header>
+      <body>
+        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
+        <description xml:lang="gup">Real-word error description for $1 in gup (PLACEHOLDER)</description>
+      </body>
+    </default>
+
+    <default type="Grammar error">
+      <ids>
+        <e id="default"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Grammar error</title>
+        <title xml:lang="gup">Grammar error in gup</title>
+      </header>
+      <body>
+        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
+        <description xml:lang="gup">Grammar error description for $1 in gup (PLACEHOLDER)</description>
+      </body>
+    </default>
+  </defaults>
+
+  <error id="real-override">
+    <header>
+      <title xml:lang="en">cake instead of cheese</title>
+      <title xml:lang="gup">cake instead of cheese in gup</title>
+    </header>
+    <body>
+      <description xml:lang="en">this should be "cake" instead of "cheese"</description>
+      <description xml:lang="gup">cake cheese description in gup (PLACEHOLDER)</description>
+    </body>
+  </error>
+
+  <error id="msyn-valency-ill">
+    <header>
+      <title xml:lang="en">illative instead of accusative</title>
+      <title xml:lang="gup">illative intead of accusativ in gup (PLACEHOLDER)</title>
+      <references> <ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">illative instead of accusative</description>
+      <description xml:lang="gup">illative instead of accusative in __UNDC2C__ (PLACEHOLDER)</description>
+    <examples>
+      <ex xml:lang="gup">Hui ollu liikon {bohccobierggu} ja {goikebierggu}.</ex>
+    </examples>
+    </body>
+  </error>
+
+
+
+</errors>

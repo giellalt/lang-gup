@@ -1,0 +1,43 @@
+#!/bin/bash
+# test script for speller accepting all lemmas
+#
+# change settings in config.json.in
+# avoid touching this file
+CONFIG=@abs_builddir@/config.json
+. "$GIELLA_CORE/scripts/termcolors.bash"
+genscript=@GTSPELLTEST@
+divvunspell=@DIVVUNSPELL@
+
+# ensure this is proper run from make check or otherwise set up
+if test -z "$srcdir" ; then
+    printf "%sfail%s %s needs to run from make check or set srcdir=.\n" "$red" \
+        "$reset" "$0"
+    exit 1
+fi
+if ! test -f "$genscript" ; then
+    printf "%sskip%s missing generator script %s\n" "$light_blue" "$reset" \
+        "$genscript"
+    exit 77
+fi
+if ! test -f "$divvunspell" ; then
+    printf "%sskip%s missing divvunspell\n" "$light_blue" "$reset"
+    exit 77
+fi
+if ! test -f "$CONFIG" ; then
+    printf "%sfail%s missing config %s\n" "$red" "$reset" "$CONFIG"
+    exit 1
+fi
+
+"$genscript" -c "$CONFIG" -D "$divvunspell" -E "@LOG_VIEWER@" \
+    -L "@abs_top_srcdir@/docs/testlogs/speller-lemmas.md" 
+
+rv=$?
+if test $rv = 77 ; then
+    printf "%sskipped%s\n" "$light_blue" "$reset"
+    exit 77
+elif test $rv -ge 1 ; then
+    printf "%sfailed%s\n" "$red" "$reset"
+    exit 1
+else
+    printf "%spassed%s\n" "$green" "$reset"
+fi

@@ -1,0 +1,11 @@
+template = ""
+rev_id = 321
+template_sha = "84f87d8073b0ed5466d4b0246f29f6cb75de58fe"
+
+[replacements]
+__GLOTTOLOG_ID__ = "gunw1252"
+__LICENSE__ = "LGPLv3"
+__REPO__ = "lang-gup"
+__UND2C__ = "gup"
+__UNDEFINED__ = "Gunwinggu"
+__UND__ = "gup"

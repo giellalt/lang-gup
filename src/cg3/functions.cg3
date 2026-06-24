@@ -1,0 +1,421 @@
+# ==================================================================== #
+#    gup functions grammar
+# ==================================================================== #
+# ==================================================================== 
+
+#Distributed under the terms of the GNU General Public License version 2 
+# or any later version.
+#  Sámi language technology project 2003-2006, University of Tromsø # 
+
+# Alphabet below must be all multichar symbols used in all rules
+STRICT-TAGS +=
+    # Tags from lexicon
+    N V A Prop Adv Num CC CS Interj
+    Abbr ABBR ACR Pr Po Pron Pcle
+    Pers Det Dem Refl Recipr Poss Interr
+    Nom Acc Gen Dat Instr
+    Ill Loc Com Ess Ine Ela
+    Msc Fem Neu
+    Sg Pl Du
+    Def Indef
+    Cmp Superl Comp
+    Prs Prt
+    ConNeg Neg Vgen Ger Actio VGen VAbess Action
+    1Sg 2Sg 3Sg Sg1 Sg2 Sg3 Du1 Du2 Du3 Pl1 Pl2 Pl3
+    PxSg1 PxSg2 PxSg3 PxDu1 PxDu2 PxDu3 PxPl1 PxPl2 PxPl3
+    Inf
+    IV TV
+    PrfPrc PrsPrc
+    Ind Imp Sbj Sup Cond Pot Imprt ImprtII
+    Rel Coll NomAg NumAg
+    Attr Ord Qst
+    G3
+    Cmpnd RCmpnd SgNomCmp SgGenCmp ShCmp
+    CLB PUNCT LEFT RIGHT
+    Guess WEB
+    Sem/Ani Sem/Fem Sem/Group Sem/Hum Sem/Mal
+    Sem/Date Sem/Measr Sem/Money Sem/Obj Sem/Org Sem/Plc
+    Sem/Sur Sem/Time Sem/Year
+    # Tags used in syntax
+    @SUBJ @<SUBJ @SUBJ> @<OBJ @<IOBJ @OBJ> @IOBJ>
+    @SUBJ<ADVL @SUBJ<OBJ
+    @OBJ @OBJ>SPRED
+    @>N @N< @>A @A< @IM
+    @<SPRED @SPRED> @<OPRED @OPRED>
+    @PPRED @<PPRED @OPRED @SPRED @SPRED<OBJ
+    @+FMAINV @-FMAINV @+FAUXV @-FAUXV @FMV
+    @-FSUBJ> @-F<OBJ @SPREF<OBJ
+    @-FOBJ @-FOBJ> @-FSUBJ @<-FSUBJ
+    @FAUX @IAUX @FS-IAUX @rc-VAUX
+    @FS-OBJ
+    @FS-ACC>> @FS-ADVL @FS-IMV @FS-N @FS-N<IAUX @FS-STA @FS-N< @FS-N<IMV
+    @<ADVL @ADVL> @>ADVL @ADVL @-FADVL @-F<ADVL @-FADVL>
+    @ADVL< @ADVL<OBJ @ADVL>CS @ADVL>SUBJ
+    @APP-ADVL< @APP-N< @APP-Num< @APP-Pron< @APP>Pron
+    @CMPND @COMP-CS<
+    @>CC @>Num @>P @>Pron @Pron< @Num<
+    @P< @CNP @CVP @>CS @CNP-VP @APP
+    @CNP @CVP
+    @IMV @ICL-ADVL @ICL-AUX< @ICL-OBJ @ICL-STA
+    @HNOUN
+    @HAB @VOC
+    @INTERJ @PCLE @V
+    @X
+    <mv> <aux>
+    ¶ ?
+    V* A*
+    ;
+
+;
+
+OPTIONS += no-inline-sets ;
+
+# ========== #
+# Delimiters #
+# ========== #
+
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
+
+# ============= #
+# Tags and sets #
+# ============= #
+
+SETS
+
+# I define end of clause and beginning of clause in a way so that the file
+# may be read both by the CG-2 and the vislcg formalisms.
+
+LIST BOS = (>>>) (<s>);
+LIST EOS = (<<<) (</s>);
+
+# CG3 doesn´t function without >>> and <<< !
+
+# Tags declared as single-membered LISTs 
+# ======================================
+
+# Parts of speech
+# ---------------
+
+SET CC-CS = CC OR CS ;
+LIST QMARK = """ ; # ADD " FOR SYNTAX COLOURING.
+LIST COMMA = "," ;
+
+#!! * Sets for POS sub-categories
+# ------------------
+
+
+#!! * Sets for Semantic tags
+# -------------
+
+SET FIRSTNAME = (Prop Sem/Fem) OR (Prop Sem/Mal) ;
+LIST TIME-N-SET = (N Sem/Time) ;
+LIST NOT-TIME = "dulvi" "vuorru" ;
+SET TIME-N = TIME-N-SET - NOT-TIME ;
+LIST HUMAN = Sem/Hum Sem/Mal Sem/Fem Sem/Sur Pers NumAg ;
+
+#!! * Sets for Morphosyntactic properties
+# --------------------------
+
+LIST LOC = Loc Ine Ela ;
+
+# Derivation
+# ----------
+
+# Syntactic tags
+# --------------
+
+SET FMAINV = @-FMAINV OR @+FMAINV OR (V @<OBJ) OR (V @N<) OR (V @<SUBJ) OR (V @<ADVL) ;
+SET FAUXV = @-FAUXV OR @+FAUXV ;
+LIST @ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-F<ADVL ;
+LIST HAB-V-TAGS = Pl3 Sg3 ConNeg PrfPrc Inf ;
+SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
+SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
+SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;
+SET OBJ = (@<OBJ) OR (@OBJ>) OR (@OBJ) OR (@-F<OBJ) OR (@-FOBJ>) ;
+LIST <OBJ = @-F<OBJ @<OBJ ;
+LIST OBJ> = @OBJ> @-FOBJ> ;
+SET <OBJ-OTHERS = <OBJ OR (Gen) OR (Nom) OR (Ess) OR (Loc) OR (Adv) OR (Ine) OR (Ela) ;
+SET OBJ>-OTHERS = OBJ> OR (Gen) OR (Nom) OR (Ess) OR (Loc) OR (Adv) OR (Ine) OR (Ela) ;
+SET SYN-V = V + SUBJ OR OBJ + V OR @ADVL + V OR (V @N<) OR (V @A<) OR V + SPRED OR (V @COMP-CS<) ;
+
+# Initials
+# --------
+
+LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+        "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
+        "á" "æ" "ø" "å" "ö" "ä" ;
+LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
+        "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+        "Á" "Æ" "Ø" "Å" "Ö" "Ä" ;
+
+# Tag sets
+# ========
+  SETS
+# ========
+
+
+# Word or not
+# -----------
+LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;
+SET REALWORD = WORD - Num - Ord ;
+SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
+
+# Verb sets
+# ---------
+
+# Verbs and their complements
+# - - - - - - - - - - - - - -
+
+SET NOT-VERB = WORD - V ;
+
+# Finiteness and mood
+# - - - - - - - - - -
+
+SET V-IND-FIN = Prs OR Prt ;
+SET V-MOOD = Ind OR Pot OR Imprt OR ImprtII OR Cond OR (Neg Sup) ;
+SET VFIN = V-MOOD - ConNeg ;
+SET VFIN-POS = V-MOOD - ConNeg - Neg ;
+SET VFIN-NOT-IMP = VFIN - Imprt ;
+SET VFIN-NOT-NEG = VFIN - Neg ;
+SET NOT-PRFPRC = WORD - PrfPrc ;
+
+# Person
+# - - - - 
+
+LIST V-SG1 = (V Ind Prs Sg1)  (V Ind Prt Sg1) (V Cond Prs Sg1) 
+             (V Cond Prt Sg1) (V Pot Prs Sg1) (V Neg Ind Sg1);
+LIST V-SG2 = (V Ind Prs Sg2)  (V Ind Prt Sg2) (V Cond Prs Sg2) 
+             (V Cond Prt Sg2) (V Pot Prs Sg2) (V Neg Ind Sg2);
+LIST V-SG3 = (V Ind Prs Sg3)  (V Ind Prt Sg3) (V Cond Prs Sg3) 
+             (V Cond Prt Sg3) (V Pot Prs Sg3) (V Neg Ind Sg3);
+LIST V-DU1 = (V Ind Prs Du1)  (V Ind Prt Du1) (V Cond Prs Du1) 
+     	     (V Cond Prt Du1) (V Pot Prs Du1) (V Neg Ind Du1);
+LIST V-DU2 = (V Ind Prs Du2)  (V Ind Prt Du2) (V Cond Prs Du2) 
+	         (V Cond Prt Du2) (V Pot Prs Du2) (V Neg Ind Du2);
+LIST V-DU3 = (V Ind Prs Du3)  (V Ind Prt Du3) (V Cond Prs Du3) 
+	         (V Cond Prt Du3) (V Pot Prs Du3) (V Neg Ind Du3);
+LIST V-PL1 = (V Ind Prs Pl1)  (V Ind Prt Pl1) (V Cond Prs Pl1) 
+             (V Cond Prt Pl1) (V Pot Prs Pl1) (V Neg Ind Pl1);
+LIST V-PL2 = (V Ind Prs Pl2)  (V Ind Prt Pl2) (V Cond Prs Pl2) 
+             (V Cond Prt Pl2) (V Pot Prs Pl2) (V Neg Ind Pl2);
+LIST V-PL3 = (V Ind Prs Pl3)  (V Ind Prt Pl3) (V Cond Prs Pl3) 
+             (V Cond Prt Pl3) (V Pot Prs Pl3) (V Neg Ind Pl3);
+ 
+
+# Some subsets of the VFIN sets
+# - - - - - - - - - - - - - - -
+SET V-SG = V-SG1 OR V-SG2 OR V-SG3 ;
+SET V-DU = V-DU1 OR V-DU2 OR V-DU3 ;
+SET V-PL = V-PL1 OR V-PL2 OR V-PL3 ;
+
+SET V-DU-PL = V-DU1 OR V-DU2 OR V-DU3 OR V-PL1 OR V-PL2 OR V-PL3 ;
+
+SET V-NOT-SG1 = VFIN-NOT-IMP - V-SG1 ;
+SET V-NOT-SG2 = VFIN-NOT-IMP - V-SG2 ;
+SET V-NOT-SG3 = VFIN-NOT-IMP - V-SG3 ;
+SET V-NOT-DU1 = VFIN-NOT-IMP - V-DU1 ;
+SET V-NOT-DU2 = VFIN-NOT-IMP - V-DU2 ;
+SET V-NOT-DU3 = VFIN-NOT-IMP - V-DU3 ;
+SET V-NOT-PL1 = VFIN-NOT-IMP - V-PL1 ;
+SET V-NOT-PL2 = VFIN-NOT-IMP - V-PL2 ;
+SET V-NOT-PL3 = VFIN-NOT-IMP - V-PL3 ;
+
+SET V-1-2 = V-SG1 OR V-SG2 OR V-DU1 OR V-DU2 OR V-PL1 OR V-PL2 ;
+SET V-3  = V-SG3 OR V-DU3 OR V-PL3 ;
+ 
+LIST VPRFPRC = (V PrfPrc) ;
+
+# Pronoun sets
+# ------------
+
+LIST MUN = (Pron Pers Sg1 Nom);
+LIST DON = (Pron Pers Sg2 Nom);
+LIST SON = (Pron Pers Sg3 Nom);
+LIST MOAI = (Pron Pers Du1 Nom);
+LIST DOAI = (Pron Pers Du2 Nom);
+LIST SOAI = (Pron Pers Du3 Nom);
+LIST MII-PERS = (Pron Pers Pl1 Nom);
+LIST DII = (Pron Pers Pl2 Nom);
+LIST SII = ("son" Pron Pers Pl3 Nom);
+
+SET PPRON-NOM = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII OR SII ;
+SET PPRON-DU-PL = MOAI OR DOAI OR SOAI OR MII-PERS OR DII OR SII ;
+SET PPRON-PL = MII-PERS OR DII OR SII ;
+SET PRON-DU = MOAI OR DOAI OR SOAI ;
+SET PPRON-NOT-SII = MUN OR DON OR SON OR MOAI OR DOAI OR SOAI OR MII-PERS OR DII ;
+
+LIST PPRON-GEN = (Sg1 Gen) (Sg2 Gen) (Sg3 Gen) (Du1 Gen) (Du2 Gen) (Du3 Gen) 
+	(Pl1 Gen) (Pl2 Gen) (Pl3 Gen);
+SET PPRON-NOT-GEN = (Pron Pers) - PPRON-GEN ;
+LIST DEM-SG = (Pron Dem Sg Nom);
+LIST DEM-PL = (Pron Dem Pl Nom);
+SET NOT-DEM = WORD - Dem ;
+
+LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) (Pron PxSg1) (Pron PxSg2) (Pron PxSg3);
+LIST DUPRON = (Pron Du1) (Pron Du2) (Pron Du3)  (Pron PxDu1) (Pron PxDu2) (Pron PxDu3);
+LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) (Pron PxPl1) (Pron PxPl2) (Pron PxPl3);
+LIST DUPRON-NOTPX = (Pron Du1) (Pron Du2) (Pron Du3) ;
+
+SET PRON-NOT-SG = DUPRON OR PLPRON ;
+
+# This set is for choosing between Adv and Pron Indef.
+
+# Adjectival sets and their complements
+# -------------------------------------
+
+SET NOT-A = WORD - A ;
+SET NOT-A-COMMA = WORD - A - COMMA ;
+SET NOT-Attr = WORD - Attr ;
+SET NOT-A-PCLE = WORD - A - Pcle ;
+SET NOT-A-ADV = WORD - A - Adv ;
+
+# Adverbial sets and their complements
+# ------------------------------------
+SET LEX-ADV = Adv - (A*) ;
+SET NOT-ADV            = WORD - Adv ;
+SET NOT-ADV-N          = NOT-ADV - N;
+SET NOT-ADV-PCLE       = NOT-ADV - Pcle ;
+SET NOT-ADV-INDEF      = NOT-ADV - Indef ;
+SET NOT-ADV-PCLE-ILL   = WORD - Adv - Pcle - Ill ;
+SET NOT-ADV-PCLE-Refl  = WORD - Adv - Pcle - Refl ;
+SET NOT-ADV-PCLE-INDEF = WORD - Adv - Pcle - Indef ;
+SET NOT-ADV-PCLE-NEG   = WORD - Adv - Pcle - Neg ;
+SET NOT-ADVL-PCLE-NEG  = WORD - @ADVL - @P< - Pcle - Neg ;
+
+
+ # Introduce finite clauses.
+
+LIST TIME-ADV = (Adv Sem/Time) ;
+
+# Coordinators
+# ------------
+
+SET CRD = @CNP OR COMMA OR ("/") OR ("-") ;
+
+
+# Sets of elements with common syntactic behaviour
+# ================================================
+
+SETS
+
+#!! * Sets for verbs
+# -----
+
+LIST NOT-REAL-V = (Actio Nom) (Actio Gen) (Actio Loc) (Actio Com) PrsPrc ;
+SET REAL-V = V - NOT-REAL-V  ;
+SET MAIN-V = V - FAUXV ;
+LIST V-TRANS = (V TV) ;
+SET TRANS-V = V-TRANS + REAL-V ;
+
+#!! * NP sets defined according to their morphosyntactic features
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+LIST N-SG-NOM = (N Sg Nom) ;
+LIST N-NOM = (N Nom) ;
+SET HEAD-N = N - RCmpnd ;
+SET HEAD-N-NOM = (N Nom) - RCmpnd ;
+SET SUBJECTHEAD = N OR A OR Pron - Refl ; # These, can be subject heads
+SET NP = N OR A ;                      # anything that can take except numerals
+SET NP-HEAD        = Pron OR HEAD-N ;
+SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg) - RCmpnd  - Dem ;
+SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl) - RCmpnd  - Dem ;
+SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - RCmpnd ;
+SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - RCmpnd ;
+SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
+SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd - (Dem Attr) ;
+
+#!! * The PRE-NP-HEAD family of sets
+
+#!! These sets model noun phrases (NPs). The idea is to first define whatever can
+#!! occur in front of the head of the NP, and thereafter negate that with the
+#!! expression **WORD - premodifiers**.
+
+
+SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR (A Attr) OR (ABBR Attr)
+         OR (Pron Pers Gen) OR (N Gen) OR (A Gen) OR
+         Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Refl Gen) OR (Indef Attr) OR 
+         (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (Action Gen) OR (@Pron<) ;
+
+SET PRE-NP-V = PrfPrc OR PrsPrc OR Actio OR (V A) OR (Ind Prs Sg3) OR (Ind Prs Sg1) OR (Imprt Du2) ;
+SET NP-MEMBER   = PRE-NP-HEAD OR N ;
+SET PRE-A-N     = (Pron Pers Gen) OR (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl Gen) OR (Pron Refl Acc) ; 
+SET NOT-PRE-A-N = WORD - PRE-A-N ;
+
+LIST PUNCT-LEFT = (PUNCT LEFT) ;
+LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
+
+SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
+SET NOT-NPMOD     = WORD - PRE-NP-HEAD OR ABBR ;
+SET NOT-NPMOD-ACC     = NOT-NPMOD - Acc OR ABBR ; 
+SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ; 
+SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;                      
+SET NOT-NPMODADV-INDEF   = WORD - PRE-NP-HEAD - Adv - Indef ;              
+SET NOT-NPMODADVII  = WORD - PRE-NP-HEAD - Adv - Indef - Ill ;        
+SET NOT-NPMODADVIIP = WORD - PRE-NP-HEAD - Adv - Indef - Ill - Pcle ; 
+SET NOT-NPMODCC   = WORD - PRE-NP-HEAD - COMMA - @CNP ;
+SET NAPP     = WORD - PRE-APP ;
+
+
+
+#!! * Miscellaneous sets
+# ------------------
+LIST Px = PxSg1 PxSg2 PxSg3 PxDu1 PxDu2 PxDu3 PxPl1 PxPl2 PxPl3 ;
+SET NOT-NUM = WORD - Num ;
+SET CARDINALS = Num - Ord ;
+SET NOT-CC = WORD - CC ;
+SET NOT-PCLE = WORD - Pcle ;
+SET REAL-CLB = CLB - COMMA ;
+SET NOT-INITIAL-CC = WORD - INITIAL - CC ;
+
+#!! * Border sets and their complements
+# ---------------------------------
+
+SET CP = (Pron Interr) OR (Pron Rel) ;
+LIST BOUNDARYSYMBOLS =  "\;" ":" "-" "–" ;
+SET S-BOUNDARY = CP OR BOUNDARYSYMBOLS OR (Neg Sup) OR @CVP ;
+SET BOC = S-BOUNDARY OR BOS ;
+SET BOC-PUNCT = BOC - ("-") - ("–") ; 
+SET EOC = S-BOUNDARY OR EOS ;
+SET NP-BOUNDARY = BOS OR EOS OR REAL-CLB OR VFIN OR Inf OR (Actio Ess) OR ConNeg OR VGen OR Sup OR PPRON-NOT-GEN OR Recipr OR Po OR Pr OR Pcle OR Interj OR CS OR CP OR @CVP ;
+
+SET APP-BOUNDARY = REAL-CLB OR VFIN OR Inf OR (Actio Ess) OR ConNeg OR VGen OR Sup OR Recipr OR Po OR Pr OR Pcle OR Interj OR CS OR CP OR PrfPrc - @>N ;
+SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR Sup OR FMAINV ;
+SET SVF-BOUNDARY = S-BOUNDARY OR VFIN ;
+
+LIST ADVLCASE = Ill Loc Com Ess Ine Ela ;
+LIST CASE = Nom Acc Gen Ill Loc Com Ess Ine Ela ;
+
+#!! * Syntactic sets
+# --------------
+
+LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-F<ADVL)(@-FADVL>)(@>A) (@>ADVL) (@ADVL<) (@<ADVL) (@ADVL>) (@ADVL) (@>N) (@APP) (@APP-N<) (@APP-Pron<) (@APP>Pron) (@APP-Num<) (@APP-ADVL<) (@VOC)(@CNP) (@CVP) (@P<) (@>P) (@HNOUN) (@INTERJ) (@Pron<) (@OBJ) (@OBJ>) (@<OBJ) (@OPRED) (@<OPRED) (@OPRED>) (@SPRED<OBJ) (@PCLE) (@COMP-CS<) (@N<) (@SPRED) (@<SPRED) (@SPRED>) (@PPRED) (@Num<) (@SUBJ) (@<SUBJ) (@SUBJ>) (@X);
+ 
+
+SET NON-APP = ALLSYNTAG - (@APP);
+
+#!! These were the set types.
+
+
+SECTION         #
+
+
+MAP:pcle (@PCLE) TARGET Pcle ;
+MAP:interj (@INTERJ) TARGET Interj ;
+MAP:>P (@>P) Gen (1 Po) ;
+MAP:>Pcoor (@>P) Gen (1 CC LINK *1 @>P BARRIER NOT-NPMOD) ;
+MAP:>P (@>P) Gen - TIME-N (NEGATE -1 Pr)(1 Pr LINK 1 Gen) ;
+MAP:p< (@P<) Gen (*-1 Pr BARRIER NOT-NPMOD)(NEGATE 1 Gen) ;
+MAP:p<coor (@P<) Gen (-1 CRD OR COMMA LINK -1 @P<) ;
+MAP:>nAttr (@>Num) TARGET Attr (1 Num)  ;
+MAP:>nAttr (@>N) TARGET Attr (*1 N BARRIER Num OR A - Attr OR Pr OR Ord)  ;
+MAP:>nAttrCoor (@>N) TARGET Attr (1 CC LINK 1 @>N)  ;
+MAP:<advl (@<ADVL) TARGET Adv (*1 Po OR EOS BARRIER SV-BOUNDARY) ;
+MAP:obj> (@OBJ>) TARGET Acc (*1 FMAINV BARRIER SV-BOUNDARY) ;
+
+
+AFTER-SECTIONS
+
+
+	#=====#
+      END #
+	#=====#
