@@ -1,0 +1,23 @@
+!! ============================================ !
+!! # The Gunwinggu morphophonological rule file 
+!! ============================================ !
+
+
+echo
+echo <<< Defining the phonological inventory >>>
+
+
+
+define Vow  [ a | e | i | o | u ] ;
+define Cns  [ b | c | d | f | g | h | j | k | l
+            | m | n | p | q | r | s | t | v | w
+	    | x | z ] ;
+
+echo
+echo <<< Defining the phonological rules >>>
+
+define dummy d -> t || _ .#. ;
+
+read regex [
+dummy
+] ;
