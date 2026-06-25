@@ -1,0 +1,19 @@
+LEXICON dem
++Dem: # ;
+
+LEXICON demloc
++Dem+Loc: # ;
+
+LEXICON Demonstratives 
+0:bukka dem ;
+0:kunekke dem ;
+0:kunu dem ;
+0:makka dem ;
+0:manekke dem ;
+0:mani dem ;
+0:namekke dem ;
+0:ngalbu dem ;
+
+LEXICON DemonstrativeLocatives
+0:kondah demloc ;
+0:kamekke demloc ;

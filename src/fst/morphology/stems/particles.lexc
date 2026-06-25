@@ -1,0 +1,14 @@
+LEXICON prt
++Part: # ;
+
+LEXICON negprt
++Neg+Part: # ;
+
+LEXICON NegationParticles
+minj negprt ;
+yuwn negprt ;
+
+LEXICON Particles
+djaying prt ;
+warrekah prt ;
+yimankek prt ;
