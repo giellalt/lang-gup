@@ -1,7 +1,8 @@
 LEXICON loc
-+Loc: # ;
++Adv+Loc: # ;
 
 LEXICON AdvBase
+Locatives ;
 barnangarra+Adv+Temp:barnangarra # ;
 bolkkime+Adv+Temp:bolkkime # ;
 boyen+Adv+Temp:boyen # ;

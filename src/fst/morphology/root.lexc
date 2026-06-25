@@ -243,9 +243,10 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
 LEXICON Root
 !! The word forms in Gunwinggu language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
- Nouns       ;
- Verbs       ;
- Adjectives  ;
+ NounBase     ;
+ AllVerbs       ;
+ AdjBase  ;
+ AdvBase ;
  Pronouns    ;
  Numerals    ;
  Prefixes    ;

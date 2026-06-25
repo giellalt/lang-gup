@@ -16,7 +16,7 @@ define Cns  [ b | c | d | f | g | h | j | k | l
 echo
 echo <<< Defining the phonological rules >>>
 
-define dummy d -> t || _ .#. ;
+define dummy d -> d || _ .#. ;
 
 read regex [
 dummy
