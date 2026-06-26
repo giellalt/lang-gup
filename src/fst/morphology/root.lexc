@@ -316,18 +316,14 @@ rr
 LEXICON Root
 !! The word forms in Gunwinggu language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
- NounBase     ;
- AllVerbs       ;
- AdjBase  ;
- AdvBase ;
- TODO_Pronouns    ;
- Conjunctions ;
- Demonstratives ;
- DemonstrativeLocatives ;
- Numerals    ;
- Prefixes    ;
- Punctuation ;  ! comes from shared-mul, not found under src/...
- Symbols     ;  ! comes from shared-mul, not found under src/...
- ProperNouns       ;
+
+@P.TYPE.V@ TSOPreBase ;
+NounGenderPreBase ;
+NominalPrefixes ;
+functionwords ;
+AdjBase ;
+AdvBase ;
+
+
 
 ! vim: set ft=xfst-lexc:
