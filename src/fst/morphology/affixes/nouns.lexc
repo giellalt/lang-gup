@@ -9,13 +9,13 @@ LEXICON NominalPrefixes
 
 
 LEXICON NominalSuffixes
-+Gen:%>kenh # ;
-+Gen:%>ken # ;
-+Turn:%>wali # ;  
-+Lack:%>yak # ;
-+Loc:%>waken # ;
-+Dyadic:%>ko # ;
- #;
+    +Gen:^kenh  # ;
+    +Gen:^ken   # ;
+   +Turn:^wali  # ;
+   +Lack:^yak   # ;
+    +Loc:^waken # ;
+ +Dyadic:^ko    # ;
+        :^      # ;
  
 LEXICON Noun_symbols_possibly_inflected
 # ;
