@@ -1,0 +1,21 @@
+#############################
+Feature: "Submit"ing a complete word form
+#############################
+Input: "karridjarrkdurrkmirri"
+Output:
+{
+	'root': 'durrkmirri', 
+	'affixes': ['V', '1pl.incl.past', 'ADV.together', 'PstImperf'], 
+	'analyzed_form': '[V][1pl.incl.past][ADV.together]durrkmirri[PstImperf]', 
+	'pos': 'Verb', 
+	'dict_entries': {'durrkmirri': 'work '}, 
+	'surface_form': 'karridjarrkdurrkmirri'
+}
+
+
+
+########################
+Feature: Recieving morph-completions as you build a word
+########################
+Input: "kabi"
+Output: ['kabirri-', 'ka-bim-', 'ka-bimbu', 'ka-bidbu-', etc]
