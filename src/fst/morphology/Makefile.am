@@ -20,7 +20,7 @@ SUBDIRS=. test
 
 # Add language-specific flags for hfst-lexc compilation here:
 if HAVE_SHARED_COMMON
-HFST_LEXC_LOCAL_FLAGS=  # --Werror # uncomment if lexc is good enough
+HFST_LEXC_LOCAL_FLAGS=   --Werror # uncomment if lexc is good enough
 else
 HFST_LEXC_LOCAL_FLAGS=  # No --Werror if deps are missing !
 endif
@@ -33,6 +33,7 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
+			 affixes/verbs.lexc	  \
 			 stems/adjectives.lexc	  \
 			 stems/functionwords.lexc	  \
 			 stems/nouns.lexc	  \

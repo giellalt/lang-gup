@@ -1,0 +1,47 @@
+LEXICON Noun_symbols_never_inflected 
+# ;
+
+LEXICON Noun_symbols_possibly_inflected 
+# ;
+
+LEXICON PERSISTSConj 
+# ;
+
+LEXICON V10Postbase 
+# ;
+
+LEXICON V2Postbase 
+# ;
+
+LEXICON V3aPostbase 
+# ;
+
+LEXICON V3cPostbase 
+# ;
+
+LEXICON V3dPostbase 
+# ;
+
+LEXICON V4aPostbase 
+# ;
+
+LEXICON V4bPostbase 
+# ;
+
+LEXICON V5aPostbase 
+# ;
+
+LEXICON V5bPostbase 
+# ;
+
+LEXICON V5cPostbase 
+# ;
+
+LEXICON V6aPostbase 
+# ;
+
+LEXICON V7aPostbase 
+# ;
+
+LEXICON V8Postbase
+# ;

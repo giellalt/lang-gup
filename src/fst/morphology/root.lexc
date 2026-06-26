@@ -323,7 +323,8 @@ NominalPrefixes ;
 functionwords ;
 AdjBase ;
 AdvBase ;
-
+Punctuation ;
+Symbols ;
 
 
 ! vim: set ft=xfst-lexc:
