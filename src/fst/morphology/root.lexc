@@ -318,6 +318,7 @@ LEXICON Root
 !! word classes, or optionally from prefixes:
 
 @P.TYPE.V@ TSOPreBase ;
+AllNounClasses ;
 NounGenderPreBase ;
 NominalPrefixes ;
 functionwords ;

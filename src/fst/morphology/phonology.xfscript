@@ -8,6 +8,7 @@ define V [ a | e | i | o | u ];
 
 # Consonents
 define C [ b | m | w | k | g | d | n | l | r | j | y | h ];
+
 define bilabialStops ["b" | "bb"];
 define bilabialNasals ["m"];
 define bilabialSemivowel ["w"];

@@ -1,21 +1,27 @@
 
 LEXICON NounGenderPreBase
-0:na^ I+NBase ;
-0:ngal^ II+NBase ;
-0:man^ III+NBase ;
-0:kun^ IV+NBase ;
-0:0^ V+NBase ;
+0:na^ INounBase ;
+0:ngal^ IINounBase ;
+0:man^ IIINounBase ;
+0:kun^ IVNounBase ;
+0:0^ VNounBase ;
 0:0^ NominalDeverbals ;
-0:0^ Place+Ns ;
+0:0^ PlaceNouns ;
 
-LEXICON All+NClasses
-I+NBase ;
-II+NBase ;
-III+NBase ;
-IV+NBase ;
-V+NBase ;
+LEXICON NominalPrefixes
++Loc:ku^  All+NClasses ; ! locative prefix, ie kuwardde == escarpment, or "the rocky place"
++Clitic+In:mi^ All+NClasses ; ! mingarre: in the vine forest, mikurrurla: in the sea, mikuwardde: in the rocks 
 
-LEXICON I+NBase
+
+
+LEXICON AllNounClasses
+INounBase ;
+IINounBase ;
+IIINounBase ;
+IVNounBase ;
+VNounBase ;
+
+LEXICON INounBase
 +N+I:bangardi^ NominalSuffixes ;
 +N+I:barlek^ NominalSuffixes ;
 +N+I:barrken^ NominalSuffixes ;
@@ -68,7 +74,7 @@ LEXICON I+NBase
 +N+I:yin^ NominalSuffixes ;
 +N+I:yuhyungki^ NominalSuffixes ;
 
-LEXICON II+NBase
+LEXICON IINounBase
 +N+II:badjan^ NominalSuffixes ;
 +N+II:bangardi^ NominalSuffixes ;
 +N+II:barrken^ NominalSuffixes ;
@@ -104,7 +110,7 @@ LEXICON II+NBase
 +N+II:yaw^ NominalSuffixes ;
 +N+II:yod^ NominalSuffixes ;
 
-LEXICON III+NBase
+LEXICON IIINounBase
 +N+III:badbirri^ NominalSuffixes ;
 +N+III:bardmo^ NominalSuffixes ;
 +N+III:barlarra^ NominalSuffixes ;
@@ -219,7 +225,7 @@ LEXICON III+NBase
 +N+III:yokkorlomud^ NominalSuffixes ;
 +N+III:yunkurr^ NominalSuffixes ;
 
-LEXICON IV+NBase
+LEXICON IVNounBase
 +N+IV:bak^ NominalSuffixes ;
 +N+IV:balak^ NominalSuffixes ;
 +N+IV:balanda^ NominalSuffixes ;
@@ -405,7 +411,7 @@ LEXICON IV+NBase
 +N+IV:yirrk^ NominalSuffixes ;
 +N+IV:yirrke^ NominalSuffixes ;
 
-LEXICON V+NBase
+LEXICON VNounBase
 +V+N:adjbud^ NominalSuffixes ;
 +V+N:adjumarlarl^ NominalSuffixes ;
 +V+N:alabbanjdja^ NominalSuffixes ;
@@ -766,7 +772,7 @@ LEXICON V+NBase
 +V+N:ngadjadj^ NominalSuffixes ;
 +V+N:ngakngak^ NominalSuffixes ;
 
-LEXICON Place+Ns
+LEXICON PlaceNouns
 ++N+Place:arrkuluk^ NominalSuffixes ;
 ++N+Place:birrirddak^ NominalSuffixes ;
 ++N+Place:kabbari^ NominalSuffixes ;
@@ -780,19 +786,3 @@ LEXICON Place+Ns
 ++N+Place:warruwi^ NominalSuffixes ;
 ++N+Place:nawarddeken^ NominalSuffixes ;
 
-LEXICON NominalDeverbals
-++N+Deverbal:yawmang^ # ;
-++N+Deverbal:danginj^ # ;
-
-LEXICON NominalPrefixes
-+Loc:ku^  All+NClasses ; ! locative prefix, ie kuwardde == escarpment, or "the rocky place"
-+Clitic+In:mi^ All+NClasses ; ! mingarre: in the vine forest, mikurrurla: in the sea, mikuwardde: in the rocks 
-
-LEXICON NominalSuffixes
-+Gen:kenh # ;
-+Gen:ken # ;
-+Turn:wali # ;  
-+Lack:yak # ;
-+Loc:waken # ;
-+Dyadic:ko # ;
-0:0 #;

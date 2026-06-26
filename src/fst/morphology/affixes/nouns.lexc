@@ -1,0 +1,24 @@
+LEXICON NominalDeverbals
++N+Deverbal:yawmang^ # ;
++N+Deverbal:danginj^ # ;
+
+LEXICON NominalPrefixes
++Loc:ku^  AllNounClasses ; ! locative prefix, ie kuwardde == escarpment, or "the rocky place"
++Clitic+In:mi^ AllNounClasses ; ! mingarre: in the vine forest, mikurrurla: in the sea, mikuwardde: in the rocks 
+
+
+
+LEXICON NominalSuffixes
++Gen:kenh # ;
++Gen:ken # ;
++Turn:wali # ;  
++Lack:yak # ;
++Loc:waken # ;
++Dyadic:ko # ;
+ #;
+ 
+LEXICON Noun_symbols_possibly_inflected
+# ;
+
+LEXICON Noun_symbols_never_inflected 
+# ;
