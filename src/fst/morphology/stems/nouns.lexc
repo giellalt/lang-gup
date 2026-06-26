@@ -1,12 +1,12 @@
 
 LEXICON NounGenderPreBase
-0:na^ INounBase ;
-0:ngal^ IINounBase ;
-0:man^ IIINounBase ;
-0:kun^ IVNounBase ;
-0:0^ VNounBase ;
-0:0^ NominalDeverbals ;
-0:0^ PlaceNouns ;
+0:na INounBase ;
+0:ngal IINounBase ;
+0:man IIINounBase ;
+0:kun IVNounBase ;
+0:0 VNounBase ;
+0:0 NominalDeverbals ;
+0:0 PlaceNouns ;
 
 
 
