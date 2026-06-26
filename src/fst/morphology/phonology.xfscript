@@ -2,24 +2,66 @@
 !! # The Gunwinggu morphophonological rule file 
 !! ============================================ !
 
+
 echo
 echo <<< Defining the phonological inventory >>>
+define V  [ a | e | i | o | u ] ;
+define C  [ b | c | d | f | g | h | j | k | l
+          | m | n | p | q | r | s | t | v | w
+	      | x | y | z ] ;
 
+echo <<< Flag diacritis >>>
+define FLAGS [
+    ("@R.TENSE.P@") | 
+    ("@P.TENSE.P@") | 
+    ("@R.TENSE.NP@") |
+    ("@P.TENSE.NP@") |
+    ("@P.VALENCE.TRNS@") |
+    ("@R.VALENCE.TRNS@") |
+    ("@P.VALENCE.INTR@") |
+    ("@R.VALENCE.INTR@") ];
 
+echo <<<  Define regular vowel changes  >>>
+define DeletePrecedingVowel V -> 0 || _ "^" FLAGS * "~" .o.
+                            "~" -> 0;
 
-define Vow  [ a | e | i | o | u ] ;
-define Cns  [ b | c | d | f | g | h | j | k | l
-            | m | n | p | q | r | s | t | v | w
-	    | x | z ] ;
+echo <<<  Define regular vowel changes  >>>
+define DeleteFollowingVowel V -> 0 || FLAGS * "^" "=" _ .o.
+                            "=" -> 0 ;
 
-echo
-echo <<< Defining the phonological rules >>>
+echo <<<  Directional phonological changes  >>>
+define DirPhonChanges "(ku)" -> 0 || V "^" _ m .o.
+                      "(ku)" -> k u || FLAGS * "^" _ m .o.
+                      "(ku)" -> 0 || _ ;
 
-define dummy d -> d || _ .#. ;
+echo <<<  FlapVowelChanges  >>>
+define FlapChange "(rr)" -> d ;
+
+echo <<<  Biyameni -> Biyami  >>>
+define NasalConsChange e -> 0 || _ "^" FLAGS * "+" .o.
+                       n -> 0 || "^" "+" _         .o.
+                       "+" -> 0;
+
+echo <<<  'r' can change depending on its environment   >>>
+define RAllophony "(r)" -> 0 || _ "^" FLAGS * "^" "(r)" .o.
+                  "(r)" -> 0 || _ "^" FLAGS * "^" r     .o.
+                  "(r)" -> 0 || l _ .o.
+                  "(r)" -> r;
+
+echo <<<  Cleanup: remove morpheme boundaries  >>>
+define Cleanup "^" -> 0;
+
 
 read regex [
-dummy
+    DeletePrecedingVowel 
+.o. DeleteFollowingVowel
+.o. DirPhonChanges      
+.o. FlapChange          
+.o. NasalConsChange     
+.o. RAllophony 
+.o. Cleanup
 ] ;
+
 
 
 ! 
