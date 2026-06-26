@@ -247,7 +247,10 @@ LEXICON Root
  AllVerbs       ;
  AdjBase  ;
  AdvBase ;
- Pronouns    ;
+ TODO_Pronouns    ;
+ Conjunctions ;
+ Demonstratives ;
+ DemonstrativeLocatives ;
  Numerals    ;
  Prefixes    ;
  Punctuation ;  ! comes from shared-mul, not found under src/...
