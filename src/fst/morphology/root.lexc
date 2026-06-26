@@ -60,44 +60,35 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
 ! From orig 
 
 
-+1Pl2
-+1Pl3Pl
-+1Pl3Sg
-+1Sg2
-+1Sg3
-+2Pl1
-+2Pl3Pl
-+2Pl3Sg
-+2Sg1
-+2Sg3
-+3Pl1
-+3Pl2
-+3Pl3Pl
-+3Pl3Sg
-+3Sg1
-+3Sg2
-+3Sg3Pl
-+3Sg3Sg
++1
++1Pl
++1Sg
++2
++2Pl
++2Sg
++3
++3pl
++3Pl
++3sg
++3Sg
 +A
-+Loc
-+Pred
 +Gen
-+Gues
-+I.Noun
-+II.Noun
-+III.Noun
-+IV.Noun
++Guess
++I
++II
++III
 +Imp
 +Irr
++IV
++Loc
 +N
 +NonPst
++Pred
 +PstImperf
 +PstPerf
 +Turn
 +V
-+V.Noun
 +VerbRootGuess
-
 
 
 
@@ -147,22 +138,25 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
 !! To represent phonologic variations in word forms we use the following
 !! symbols in the lexicon files:
 
-^bb
-^dd
-^dj
-^djdj
-^kk
-^ng
-^nj
-^rd
-^rdd
-^rl
-^rn
-^rr
-{ku} 
-{rr} 
-{r}
-{~~}
+(~~)
+(ku)
+(r)
+(rr)
+
+! TODO: Avoid these:
+bb
+dd
+dj
+djdj
+kk
+ng
+nj
+rd
+rdd
+rl
+rn
+rr
+
 
 
 
@@ -222,22 +216,23 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
 
 !! | Flag | Explanation
 !! | ---- | -----------
-@P.PERS.T@         !!≈ |  @CODE@ | 
-@R.PERS.T@         !!≈ |  @CODE@ | 
-@P.TYPE.N@         !!≈ |  @CODE@ | 
-@R.TYPE.N@         !!≈ |  @CODE@ | 
-@P.TYPE.V@         !!≈ |  @CODE@ | 
-@R.TYPE.V@         !!≈ |  @CODE@ | 
-@P.VALENCE.AUGM@   !!≈ |  @CODE@ | 
-@R.VALENCE.AUGM@   !!≈ |  @CODE@ | 
-@P.VALENCE.INTR@   !!≈ |  @CODE@ | 
-@P.TENSE.NP@       !!≈ |  @CODE@ | 
-@P.VALENCE.TRNS@   !!≈ |  @CODE@ | 
-@P.TENSE.P@        !!≈ |  @CODE@ | 
-@R.VALENCE.INTR@   !!≈ |  @CODE@ | 
-@R.TENSE.NP@       !!≈ |  @CODE@ | 
-@R.VALENCE.TRNS@   !!≈ |  @CODE@ | 
-@R.TENSE.P@        !!≈ |  @CODE@ | 
+@P.PERS.T@		    !!≈ |  @CODE@ |
+@P.TENSE.NP@	    !!≈ |  @CODE@ |
+@P.TENSE.P@		    !!≈ |  @CODE@ |
+@P.TYPE.N@		    !!≈ |  @CODE@ |
+@P.TYPE.V@		    !!≈ |  @CODE@ |
+@P.VALENCE.AUGM@    !!≈ |  @CODE@ |
+@P.VALENCE.INTR@    !!≈ |  @CODE@ |
+@P.VALENCE.TRNS@    !!≈ |  @CODE@ |
+@R.PERS.T@		    !!≈ |  @CODE@ |
+@R.TENSE.NP@	    !!≈ |  @CODE@ |
+@R.TENSE.P@		    !!≈ |  @CODE@ |
+@R.TYPE.N@		    !!≈ |  @CODE@ |
+@R.TYPE.V@		    !!≈ |  @CODE@ |
+@R.VALENCE.AUGM@    !!≈ |  @CODE@ |
+@R.VALENCE.INTR@    !!≈ |  @CODE@ |
+@R.VALENCE.TRNS@    !!≈ |  @CODE@ |
+
 
 
 LEXICON Root
