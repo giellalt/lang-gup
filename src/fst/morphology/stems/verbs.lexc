@@ -1,33 +1,9 @@
-Multichar_Symbols
- rr rd rdd dj bb kk dd djdj
- ng rn rl rr nj
- [N] [V] [NonPst] [PstPerf] [PstImperf] [Irr] [Imp]
- [3pl.3pl] [3pl.3sg] [3pl.2] [3pl.1]
- [3sg.1] [3sg.2] [3sg.3sg] [3sg.3pl]
- [2sg.1] [2sg.3]
- [2pl.1] [2pl.3sg] [2pl.3pl]
- [1pl.2] [1pl.3sg] [1pl.3pl]
- [1sg.2] [1sg.3]
- @R.VALENCE.INTR@ @R.TENSE.NP@
- @P.VALENCE.INTR@ @P.TENSE.NP@
- @R.VALENCE.TRNS@ @R.TENSE.P@
- @P.VALENCE.TRNS@ @P.TENSE.P@
- @P.PERS.T@ @R.PERS.T@
- @P.VALENCE.AUGM@ @R.VALENCE.AUGM@
- @P.TYPE.N@ @R.TYPE.N@
- @P.TYPE.V@ @R.TYPE.V@
- (ku) (rr) (r) (~~)
- [GUESS] 
- [VerbRootGuess]
-
-LEXICON Root
-@P.TYPE.V@ TSOPreBase ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!                                     !!
-!!   General Incorporable Nouns        !!
+!!   General Incorporable +Ns        !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-LEXICON NounBase
+LEXICON +NBase
 0:barrarn^ PostNominal ; 
 0:berd^ PostNominal ;
 0:bim^ PostNominal ;
@@ -145,198 +121,198 @@ LEXICON TSOPreBase
 @P.VALENCE.TRNS@@P.TENSE.NP@ TransNonPast1Obj ; 
 
 LEXICON SingleIntransPastTSO
-[V][1sg.past]:nga^ DirPreBase  "weight: 5.627834499628365" ;
-[V][2sg.past]:yi^ DirPreBase  "weight: 6.021829713025271" ;
-[V][3sg.past]:0^ DirPreBase  "weight: 3.8945527056453217" ;
-[V][3sg.past]:bi^ DirPreBase  "weight: 3.8945527056453217" ;
++V+1Sg+Past:nga^ DirPreBase  "weight: 5.627834499628365" ;
++V+2Sg+Past:yi^ DirPreBase  "weight: 6.021829713025271" ;
++V+3Sg+Past:0^ DirPreBase  "weight: 3.8945527056453217" ;
++V+3Sg+Past:bi^ DirPreBase  "weight: 3.8945527056453217" ;
 
 LEXICON SingleIntransNonPastTSO
-[V][1sg.nonpast]:nga^ DirPreBase  "weight: 5.466271861113757" ;
-[V][2sg.nonpast]:yi^ DirPreBase  "weight: 6.035609458623289" ;
-[V][3sg.nonpast]:ka^ DirPreBase  "weight: 4.343829129153874" ;
++V+1Sg+NonPast:nga^ DirPreBase  "weight: 5.466271861113757" ;
++V+2Sg+NonPast:yi^ DirPreBase  "weight: 6.035609458623289" ;
++V+3Sg+NonPast:ka^ DirPreBase  "weight: 4+343829129153874" ;
 
 LEXICON DualIntransPastTSO
-[V][12m.past]:ngar(r)^ DirPreBase  "weight: 9.774270648628951" ;
-[V][1ua.excl.past]:ngane^ DirPreBase  "weight: 8.270193251852678" ;
-[V][2ua.past]:ngune^ DirPreBase  "weight: 8.595615652287306" ;
-[V][3ua.past]:bene^ DirPreBase  "weight: 6.43909436806459" ;
++V+12M+Past:ngar(r)^ DirPreBase  "weight: 9.774270648628951" ;
++V+1Ua+Excl+Past:ngane^ DirPreBase  "weight: 8+270193251852678" ;
++V+2Ua+Past:ngune^ DirPreBase  "weight: 8.595615652287306" ;
++V+3Ua+Past:bene^ DirPreBase  "weight: 6.43909436806459" ;
 
 LEXICON DualIntransNonPastTSO
-[V][12m.nonpast]:ngar(r)^ DirPreBase  "weight: 6.2652158711103825" ;
-[V][1ua.excl.nonpast]:ngane^ DirPreBase  "weight: 8.825190093931806" ;
-[V][2ua.nonpast]:ngune^ DirPreBase  "weight: 8.545605231712644" ;
-[V][3ua.nonpast]:kabene^ DirPreBase  "weight: 7.810660922474238" ;
++V+12M+NonPast:ngar(r)^ DirPreBase  "weight: 6+2652158711103825" ;
++V+1Ua+Excl+NonPast:ngane^ DirPreBase  "weight: 8.825190093931806" ;
++V+2Ua+NonPast:ngune^ DirPreBase  "weight: 8.545605231712644" ;
++V+3Ua+NonPast:kabene^ DirPreBase  "weight: 7.810660922474238" ;
 
 LEXICON TrialIntransPastTSO
-[V][12ua.past]:kane^ DirPreBase  "weight: 12.259177298416953" ;
++V+12Ua+Past:kane^ DirPreBase  "weight: 12+259177298416953" ;
 
 LEXICON TrialIntransNonPastTSO
-[V][12ua.nonpast]:kane^ DirPreBase  "weight: 12.952324478976898" ;
++V+12Ua+NonPast:kane^ DirPreBase  "weight: 12.952324478976898" ;
 
 LEXICON PluralIntransPastTSO
-[V][1pl.excl.past]:ngarri^ DirPreBase  "weight: 6.640589669823983" ;
-[V][1pl.incl.past]:karri^ DirPreBase  "weight: 6.497125915636775" ;
-[V][2pl.past]:ngurri^ DirPreBase  "weight: 5.557831371757859" ;
-[V][3pl.past]:birri^ DirPreBase  "weight: 4.51894777365377" ;
++V+1Pl+Excl+Past:ngarri^ DirPreBase  "weight: 6.640589669823983" ;
++V+1Pl+Incl+Past:karri^ DirPreBase  "weight: 6.497125915636775" ;
++V+2Pl+Past:ngurri^ DirPreBase  "weight: 5.557831371757859" ;
++V+3Pl+Past:birri^ DirPreBase  "weight: 4.51894777365377" ;
 
 LEXICON PluralIntransNonPastTSO
-[V][1pl.excl.nonpast]:ngarri^ DirPreBase  "weight: 7.017430283357309" ;
-[V][1pl.incl.nonpast]:karri^ DirPreBase  "weight: 6.171266853040718" ;
-[V][2pl.nonpast]:ngurri^ DirPreBase  "weight: 5.228319822300832" ;
-[V][3pl.nonpast]:kabirri^ DirPreBase  "weight: 4.961070549136699" ;
++V+1Pl+Excl+NonPast:ngarri^ DirPreBase  "weight: 7.017430283357309" ;
++V+1Pl+Incl+NonPast:karri^ DirPreBase  "weight: 6+171266853040718" ;
++V+2Pl+NonPast:ngurri^ DirPreBase  "weight: 5+228319822300832" ;
++V+3Pl+NonPast:kabirri^ DirPreBase  "weight: 4.961070549136699" ;
 
 LEXICON TransPast3pObjTSO
-[V][1sg.3sg.past]:nga^ DirPreBase  "weight: 6.059682837804808" ;
-[V][2sg.3sg.past]:yi^ DirPreBase  "weight: 6.357911019227119" ;
-[V][3sg.3sg.past]:0^ DirPreBase  "weight: 4.614736536860386" ;
-[V][3sg.3Hsg.past]:bi^ DirPreBase  "weight: 4.912522135240414" ;
-[V][12m.3sg.past]:ngarr^ DirPreBase  "weight: 11.160565009748842" ;
-[V][2ua.3sg.past]:ngune^ DirPreBase  "weight: 9.396976417487483" ;
-[V][1ua.excl.3sg.past]:ngane^ DirPreBase  "weight: 9.214654860693528" ;
-[V][3ua.3sg.past]:bene^ DirPreBase  "weight: 7.202931493068644" ;
-[V][12ua.3sg.past]:kane^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1pl.excl.3sg.past]:ngarri^ DirPreBase  "weight: 7.27215186995983" ;
-[V][1pl.incl.3sg.past]:karri^ DirPreBase  "weight: 7.430863561114651" ;
-[V][2pl.3sg.past]:ngurri^ DirPreBase  "weight: 5.818230757784032" ;
-[V][3pl.3sg.past]:birri^ DirPreBase  "weight: 4.682311416703111" ;
++V+1Sg+3sg+Past:nga^ DirPreBase  "weight: 6.059682837804808" ;
++V+2Sg+3sg+Past:yi^ DirPreBase  "weight: 6+357911019227119" ;
++V+3Sg+3sg+Past:0^ DirPreBase  "weight: 4.614736536860386" ;
++V+3Sg+3Hsg+Past:bi^ DirPreBase  "weight: 4.912522135240414" ;
++V+12M+3sg+Past:ngarr^ DirPreBase  "weight: 11+160565009748842" ;
++V+2Ua+3sg+Past:ngune^ DirPreBase  "weight: 9+396976417487483" ;
++V+1Ua+Excl+3sg+Past:ngane^ DirPreBase  "weight: 9+214654860693528" ;
++V+3Ua+3sg+Past:bene^ DirPreBase  "weight: 7+202931493068644" ;
++V+12Ua+3sg+Past:kane^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Pl+Excl+3sg+Past:ngarri^ DirPreBase  "weight: 7+27215186995983" ;
++V+1Pl+Incl+3sg+Past:karri^ DirPreBase  "weight: 7.430863561114651" ;
++V+2Pl+3sg+Past:ngurri^ DirPreBase  "weight: 5.818230757784032" ;
++V+3Pl+3sg+Past:birri^ DirPreBase  "weight: 4.682311416703111" ;
 
 LEXICON TransNonPast3pObjTSO
-[V][1sg.3sg.nonpast]:nga^ DirPreBase  "weight: 5.237647005175971" ;
-[V][2sg.3sg.nonpast]:yi^ DirPreBase  "weight: 5.962067978483017" ;
-[V][3sg.3sg.nonpast]:ka^ DirPreBase  "weight: 5.1910052980289105" ;
-[V][3sg.3Hsg.nonpast]:kabi^ DirPreBase  "weight: 6.135588598381929" ;
-[V][12m.3sg.nonpast]:ngarr^ DirPreBase  "weight: 10.007885499810456" ;
-[V][1ua.excl.3sg.nonpast]:ngane^ DirPreBase  "weight: 9.123683082487803" ;
-[V][2ua.3sg.nonpast]:ngune^ DirPreBase  "weight: 8.747631859585931" ;
-[V][3ua.3sg.nonpast]:kabene^ DirPreBase  "weight: 8.486416360322314" ;
-[V][12ua.3sg.nonpast]:kane^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1pl.excl.3sg.nonpast]:ngarri^ DirPreBase  "weight: 6.928876886015865" ;
-[V][1pl.incl.3sg.nonpast]:karri^ DirPreBase  "weight: 6.143285172933918" ;
-[V][2pl.3sg.nonpast]:ngurri^ DirPreBase  "weight: 5.025360934113919" ;
-[V][3pl.3sg.nonpast]:kabirri^ DirPreBase  "weight: 5.128278468120605" ;
++V+1Sg+3sg+NonPast:nga^ DirPreBase  "weight: 5+237647005175971" ;
++V+2Sg+3sg+NonPast:yi^ DirPreBase  "weight: 5.962067978483017" ;
++V+3Sg+3sg+NonPast:ka^ DirPreBase  "weight: 5+1910052980289105" ;
++V+3Sg+3Hsg+NonPast:kabi^ DirPreBase  "weight: 6+135588598381929" ;
++V+12M+3sg+NonPast:ngarr^ DirPreBase  "weight: 10.007885499810456" ;
++V+1Ua+Excl+3sg+NonPast:ngane^ DirPreBase  "weight: 9+123683082487803" ;
++V+2Ua+3sg+NonPast:ngune^ DirPreBase  "weight: 8.747631859585931" ;
++V+3Ua+3sg+NonPast:kabene^ DirPreBase  "weight: 8.486416360322314" ;
++V+12Ua+3sg+NonPast:kane^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Pl+Excl+3sg+NonPast:ngarri^ DirPreBase  "weight: 6.928876886015865" ;
++V+1Pl+Incl+3sg+NonPast:karri^ DirPreBase  "weight: 6+143285172933918" ;
++V+2Pl+3sg+NonPast:ngurri^ DirPreBase  "weight: 5.025360934113919" ;
++V+3Pl+3sg+NonPast:kabirri^ DirPreBase  "weight: 5+128278468120605" ;
 
 LEXICON TransPast3pDualObjTSO
-[V][1sg.3ua.past]:ngabenbene^ DirPreBase  "weight: 11.342886566542797" ;
-[V][2sg.3ua.past]:yibenbene^ DirPreBase  "weight: 9.486588576177171" ;
-[V][3sg.3ua.past]:benbene^ DirPreBase  "weight: 7.518602475422657" ;
-[V][3sg.3ua.past]:benmene^ DirPreBase  "weight: 7.518602475422657" ;
-[V][12m.3ua.past]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][3ua.3ua.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
-[V][2ua.3ua.past]:ngunebenbene^ DirPreBase  "weight: 10.119111134920681" ;
-[V][2ua.3ua.past]:ngurrbenbene^ DirPreBase  "weight: 10.119111134920681" ;
-[V][1ua.excl.3ua.past]:nganebenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1ua.excl.3ua.past]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][12ua.3ua.past]:kanebenbene^ DirPreBase  "weight: 12.259177298416953" ;
-[V][12ua.3ua.past]:karrbenbene^ DirPreBase  "weight: 12.259177298416953" ;
-[V][1pl.excl.3ua.past]:ngarribenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1pl.excl.3ua.past]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1pl.incl.3ua.past]:karribenbene^ DirPreBase  "weight: 12.259177298416953" ;
-[V][1pl.incl.3ua.past]:karrbenbene^ DirPreBase  "weight: 12.259177298416953" ;
-[V][2pl.3ua.past]:ngurribenbene^ DirPreBase  "weight: 10.119111134920681" ;
-[V][2pl.3ua.past]:ngurrbenbene^ DirPreBase  "weight: 10.119111134920681" ;
-[V][3pl.3ua.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
++V+1Sg+3ua+Past:ngabenbene^ DirPreBase  "weight: 11+342886566542797" ;
++V+2Sg+3ua+Past:yibenbene^ DirPreBase  "weight: 9.486588576177171" ;
++V+3Sg+3ua+Past:benbene^ DirPreBase  "weight: 7.518602475422657" ;
++V+3Sg+3ua+Past:benmene^ DirPreBase  "weight: 7.518602475422657" ;
++V+12M+3ua+Past:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+3Ua+3ua+Past:bindi^ DirPreBase  "weight: 6+271469800186682" ;
++V+2Ua+3ua+Past:ngunebenbene^ DirPreBase  "weight: 10+119111134920681" ;
++V+2Ua+3ua+Past:ngurrbenbene^ DirPreBase  "weight: 10+119111134920681" ;
++V+1Ua+Excl+3ua+Past:nganebenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Ua+Excl+3ua+Past:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+12Ua+3ua+Past:kanebenbene^ DirPreBase  "weight: 12+259177298416953" ;
++V+12Ua+3ua+Past:karrbenbene^ DirPreBase  "weight: 12+259177298416953" ;
++V+1Pl+Excl+3ua+Past:ngarribenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Pl+Excl+3ua+Past:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Pl+Incl+3ua+Past:karribenbene^ DirPreBase  "weight: 12+259177298416953" ;
++V+1Pl+Incl+3ua+Past:karrbenbene^ DirPreBase  "weight: 12+259177298416953" ;
++V+2Pl+3ua+Past:ngurribenbene^ DirPreBase  "weight: 10+119111134920681" ;
++V+2Pl+3ua+Past:ngurrbenbene^ DirPreBase  "weight: 10+119111134920681" ;
++V+3Pl+3ua+Past:bindi^ DirPreBase  "weight: 6+271469800186682" ;
 
 LEXICON TransNonPast3pDualObjTSO
-[V][1sg.3ua.nonpast]:ngabenbene^ DirPreBase  "weight: 10.179735756737117" ;
-[V][2sg.3ua.nonpast]:yibenbene^ DirPreBase  "weight: 9.907802041253474" ;
-[V][3sg.3ua.nonpast]:kabenbene^ DirPreBase  "weight: 9.694227940955415" ;
-[V][12m.3ua.nonpast]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][3ua.3ua.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
-[V][2ua.3ua.nonpast]:ngunebenbene^ DirPreBase  "weight: 9.861282025618582" ;
-[V][2ua.3ua.nonpast]:ngurrbenbene^ DirPreBase  "weight: 9.861282025618582" ;
-[V][1ua.excl.3ua.nonpast]:nganebenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1ua.excl.3ua.nonpast]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][12ua.3ua.nonpast]:kanebenbene^ DirPreBase  "weight: 11.853712190308787" ;
-[V][12ua.3ua.nonpast]:karrbenbene^ DirPreBase  "weight: 11.853712190308787" ;
-[V][1pl.excl.3ua.nonpast]:ngarribenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1pl.excl.3ua.nonpast]:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
-[V][1pl.incl.3ua.nonpast]:karribenbene^ DirPreBase  "weight: 11.853712190308787" ;
-[V][1pl.incl.3ua.nonpast]:karrbenbene^ DirPreBase  "weight: 11.853712190308787" ;
-[V][2pl.3ua.nonpast]:ngurribenbene^ DirPreBase  "weight: 9.861282025618582" ;
-[V][2pl.3ua.nonpast]:ngurrbenbene^ DirPreBase  "weight: 9.861282025618582" ;
-[V][3pl.3ua.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
++V+1Sg+3ua+NonPast:ngabenbene^ DirPreBase  "weight: 10+179735756737117" ;
++V+2Sg+3ua+NonPast:yibenbene^ DirPreBase  "weight: 9.907802041253474" ;
++V+3Sg+3ua+NonPast:kabenbene^ DirPreBase  "weight: 9.694227940955415" ;
++V+12M+3ua+NonPast:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+3Ua+3ua+NonPast:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
++V+2Ua+3ua+NonPast:ngunebenbene^ DirPreBase  "weight: 9.861282025618582" ;
++V+2Ua+3ua+NonPast:ngurrbenbene^ DirPreBase  "weight: 9.861282025618582" ;
++V+1Ua+Excl+3ua+NonPast:nganebenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Ua+Excl+3ua+NonPast:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+12Ua+3ua+NonPast:kanebenbene^ DirPreBase  "weight: 11.853712190308787" ;
++V+12Ua+3ua+NonPast:karrbenbene^ DirPreBase  "weight: 11.853712190308787" ;
++V+1Pl+Excl+3ua+NonPast:ngarribenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Pl+Excl+3ua+NonPast:ngarrbenbene^ DirPreBase  "weight: 12.952324478976898" ;
++V+1Pl+Incl+3ua+NonPast:karribenbene^ DirPreBase  "weight: 11.853712190308787" ;
++V+1Pl+Incl+3ua+NonPast:karrbenbene^ DirPreBase  "weight: 11.853712190308787" ;
++V+2Pl+3ua+NonPast:ngurribenbene^ DirPreBase  "weight: 9.861282025618582" ;
++V+2Pl+3ua+NonPast:ngurrbenbene^ DirPreBase  "weight: 9.861282025618582" ;
++V+3Pl+3ua+NonPast:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
 
 LEXICON TransPast3PlObjTSO
-[V][1sg.3pl.past]:ngaben^ DirPreBase  "weight: 7.430863561114651" ;
-[V][2sg.3pl.past]:yiben^ DirPreBase  "weight: 7.091538255511032" ;
-[V][3sg.3pl.past]:ben^ DirPreBase  "weight: 5.2488654311097225" ;
-[V][12m.3pl.past]:ngarrben^ DirPreBase  "weight: 9.368805540520787" ;
-[V][3ua.3pl.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
-[V][2ua.3pl.past]:nguneben^ DirPreBase  "weight: 7.44293614234892" ;
-[V][2ua.3pl.past]:ngurrben^ DirPreBase  "weight: 7.44293614234892" ;
-[V][1ua.excl.3pl.past]:nganeben^ DirPreBase  "weight: 9.368805540520787" ;
-[V][1ua.excl.3pl.past]:ngarrben^ DirPreBase  "weight: 9.368805540520787" ;
-[V][12ua.3pl.past]:kaneben^ DirPreBase  "weight: 9.733448654108697" ;
-[V][12ua.3pl.past]:karrben^ DirPreBase  "weight: 9.733448654108697" ;
-[V][1pl.excl.3pl.past]:ngarriben^ DirPreBase  "weight: 9.368805540520787" ;
-[V][1pl.excl.3pl.past]:ngarrben^ DirPreBase  "weight: 9.368805540520787" ;
-[V][1pl.incl.3pl.past]:karriben^ DirPreBase  "weight: 9.733448654108697" ;
-[V][1pl.incl.3pl.past]:karrben^ DirPreBase  "weight: 9.733448654108697" ;
-[V][2pl.3pl.past]:ngurriben^ DirPreBase  "weight: 7.44293614234892" ;
-[V][2pl.3pl.past]:ngurrben^ DirPreBase  "weight: 7.44293614234892" ;
-[V][3pl.3pl.past]:bindi^ DirPreBase  "weight: 6.271469800186682" ;
++V+1Sg+3pl+Past:ngaben^ DirPreBase  "weight: 7.430863561114651" ;
++V+2Sg+3pl+Past:yiben^ DirPreBase  "weight: 7.091538255511032" ;
++V+3Sg+3pl+Past:ben^ DirPreBase  "weight: 5+2488654311097225" ;
++V+12M+3pl+Past:ngarrben^ DirPreBase  "weight: 9+368805540520787" ;
++V+3Ua+3pl+Past:bindi^ DirPreBase  "weight: 6+271469800186682" ;
++V+2Ua+3pl+Past:nguneben^ DirPreBase  "weight: 7.44293614234892" ;
++V+2Ua+3pl+Past:ngurrben^ DirPreBase  "weight: 7.44293614234892" ;
++V+1Ua+Excl+3pl+Past:nganeben^ DirPreBase  "weight: 9+368805540520787" ;
++V+1Ua+Excl+3pl+Past:ngarrben^ DirPreBase  "weight: 9+368805540520787" ;
++V+12Ua+3pl+Past:kaneben^ DirPreBase  "weight: 9.733448654108697" ;
++V+12Ua+3pl+Past:karrben^ DirPreBase  "weight: 9.733448654108697" ;
++V+1Pl+Excl+3pl+Past:ngarriben^ DirPreBase  "weight: 9+368805540520787" ;
++V+1Pl+Excl+3pl+Past:ngarrben^ DirPreBase  "weight: 9+368805540520787" ;
++V+1Pl+Incl+3pl+Past:karriben^ DirPreBase  "weight: 9.733448654108697" ;
++V+1Pl+Incl+3pl+Past:karrben^ DirPreBase  "weight: 9.733448654108697" ;
++V+2Pl+3pl+Past:ngurriben^ DirPreBase  "weight: 7.44293614234892" ;
++V+2Pl+3pl+Past:ngurrben^ DirPreBase  "weight: 7.44293614234892" ;
++V+3Pl+3pl+Past:bindi^ DirPreBase  "weight: 6+271469800186682" ;
 
 LEXICON TransNonPast3PlObjTSO
-[V][1sg.3pl.nonpast]:ngaben^ DirPreBase  "weight: 6.5002755245396715" ;
-[V][2sg.3pl.nonpast]:yiben^ DirPreBase  "weight: 6.563763073431268" ;
-[V][3sg.3pl.nonpast]:kaben^ DirPreBase  "weight: 5.858089633052142" ;
-[V][12m.3pl.nonpast]:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
-[V][3ua.3pl.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
-[V][2ua.3pl.nonpast]:nguneben^ DirPreBase  "weight: 6.670057732080891" ;
-[V][2ua.3pl.nonpast]:ngurrben^ DirPreBase  "weight: 6.670057732080891" ;
-[V][1ua.excl.3pl.nonpast]:nganeben^ DirPreBase  "weight: 8.545605231712644" ;
-[V][1ua.excl.3pl.nonpast]:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
-[V][12ua.3pl.nonpast]:kaneben^ DirPreBase  "weight: 8.337203962135638" ;
-[V][12ua.3pl.nonpast]:karrben^ DirPreBase  "weight: 8.337203962135638" ;
-[V][1pl.excl.3pl.nonpast]:ngarriben^ DirPreBase  "weight: 8.545605231712644" ;
-[V][1pl.excl.3pl.nonpast]:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
-[V][1pl.incl.3pl.nonpast]:karriben^ DirPreBase  "weight: 8.337203962135638" ;
-[V][1pl.incl.3pl.nonpast]:karrben^ DirPreBase  "weight: 8.337203962135638" ;
-[V][2pl.3pl.nonpast]:ngurriben^ DirPreBase  "weight: 6.668190317906095" ;
-[V][2pl.3pl.nonpast]:ngurrben^ DirPreBase  "weight: 6.668190317906095" ;
-[V][3pl.3pl.nonpast]:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
++V+1Sg+3pl+NonPast:ngaben^ DirPreBase  "weight: 6.5002755245396715" ;
++V+2Sg+3pl+NonPast:yiben^ DirPreBase  "weight: 6.563763073431268" ;
++V+3Sg+3pl+NonPast:kaben^ DirPreBase  "weight: 5.858089633052142" ;
++V+12M+3pl+NonPast:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
++V+3Ua+3pl+NonPast:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
++V+2Ua+3pl+NonPast:nguneben^ DirPreBase  "weight: 6.670057732080891" ;
++V+2Ua+3pl+NonPast:ngurrben^ DirPreBase  "weight: 6.670057732080891" ;
++V+1Ua+Excl+3pl+NonPast:nganeben^ DirPreBase  "weight: 8.545605231712644" ;
++V+1Ua+Excl+3pl+NonPast:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
++V+12Ua+3pl+NonPast:kaneben^ DirPreBase  "weight: 8+337203962135638" ;
++V+12Ua+3pl+NonPast:karrben^ DirPreBase  "weight: 8+337203962135638" ;
++V+1Pl+Excl+3pl+NonPast:ngarriben^ DirPreBase  "weight: 8.545605231712644" ;
++V+1Pl+Excl+3pl+NonPast:ngarrben^ DirPreBase  "weight: 8.545605231712644" ;
++V+1Pl+Incl+3pl+NonPast:karriben^ DirPreBase  "weight: 8+337203962135638" ;
++V+1Pl+Incl+3pl+NonPast:karrben^ DirPreBase  "weight: 8+337203962135638" ;
++V+2Pl+3pl+NonPast:ngurriben^ DirPreBase  "weight: 6.668190317906095" ;
++V+2Pl+3pl+NonPast:ngurrben^ DirPreBase  "weight: 6.668190317906095" ;
++V+3Pl+3pl+NonPast:kabindi^ DirPreBase  "weight: 6.638776432699802" ;
 
 LEXICON TransPast2Obj
-[V][3sg.2.past]:ngun^ DirPreBase  "weight: 6.941057304572736" ;
-[V][1sg.2ua.past]:benbene^ DirPreBase  "weight: 7.518602475422657" ;
-[V][3sg.2ua.past]:ngunbene^ DirPreBase  "weight: 12.259177298416953" ;
-[V][1sg.2.past]:0^ DirPreBase  "weight: 4.614736536860386" ;
-[V][3pl.2pl.past]:ngundi^ DirPreBase  "weight: 7.3801704467991325" ;
-[V][1pl.2.past]:ngundi^ DirPreBase  "weight: 7.3801704467991325" ;
-[V][1pl.2pl.past]:bi^ DirPreBase  "weight: 4.912522135240414" ;
++V+3Sg+2+Past:ngun^ DirPreBase  "weight: 6.941057304572736" ;
++V+1Sg+2ua+Past:benbene^ DirPreBase  "weight: 7.518602475422657" ;
++V+3Sg+2ua+Past:ngunbene^ DirPreBase  "weight: 12+259177298416953" ;
++V+1Sg+2+Past:0^ DirPreBase  "weight: 4.614736536860386" ;
++V+3Pl+2pl+Past:ngundi^ DirPreBase  "weight: 7+3801704467991325" ;
++V+1Pl+2+Past:ngundi^ DirPreBase  "weight: 7+3801704467991325" ;
++V+1Pl+2pl+Past:bi^ DirPreBase  "weight: 4.912522135240414" ;
 
 LEXICON TransNonPast2Obj
-[V][3sg.2.nonpast]:ngun^ DirPreBase  "weight: 6.204737952147582" ;
-[V][1sg.2ua.nonpast]:benbene^ DirPreBase  "weight: 9.861282025618582" ;
-[V][3sg.2ua.nonpast]:ngunbene^ DirPreBase  "weight: 11.006414329921585" ;
-[V][1sg.2.nonpast]:0^ DirPreBase  "weight: 2.963852602535772" ;
-[V][3pl.2pl.nonpast]:ngundi^ DirPreBase  "weight: 6.486179754739278" ;
-[V][1pl.2.nonpast]:ngundi^ DirPreBase  "weight: 6.486179754739278" ;
-[V][1pl.2pl.nonpast]:bi^ DirPreBase  "weight: 7.335553381310326" ;
++V+3Sg+2+NonPast:ngun^ DirPreBase  "weight: 6+204737952147582" ;
++V+1Sg+2ua+NonPast:benbene^ DirPreBase  "weight: 9.861282025618582" ;
++V+3Sg+2ua+NonPast:ngunbene^ DirPreBase  "weight: 11.006414329921585" ;
++V+1Sg+2+NonPast:0^ DirPreBase  "weight: 2.963852602535772" ;
++V+3Pl+2pl+NonPast:ngundi^ DirPreBase  "weight: 6.486179754739278" ;
++V+1Pl+2+NonPast:ngundi^ DirPreBase  "weight: 6.486179754739278" ;
++V+1Pl+2pl+NonPast:bi^ DirPreBase  "weight: 7+335553381310326" ;
 
 LEXICON TransPast1Obj
-[V][2sg.1.past]:kan^ DirPreBase  "weight: 5.967608158858632" ;
-[V][3sg.1pl.past]:kan^ DirPreBase  "weight: 5.967608158858632" ;
-[V][3sg.1.past]:ngan^ DirPreBase  "weight: 6.749788961788975" ;
-[V][2sg.1ua.past]:kanbene^ DirPreBase  "weight: 10.872882937297062" ;
-[V][3sg.1ua.past]:kanbene^ DirPreBase  "weight: 10.467417829188896" ;
-[V][3sg.1ua.past]:nganbene^ DirPreBase  "weight: 10.467417829188896" ;
-[V][2pl.1.past]:kandi^ DirPreBase  "weight: 7.222224696003323" ;
-[V][3pl.1ua.past]:kandi^ DirPreBase  "weight: 6.747766716408207" ;
-[V][3pl.1sg.past]:ngandi^ DirPreBase  "weight: 7.72121586212231" ;
-[V][3pl.1ua.past]:ngandi^ DirPreBase  "weight: 6.747766716408207" ;
++V+2Sg+1+Past:kan^ DirPreBase  "weight: 5.967608158858632" ;
++V+3Sg+1pl+Past:kan^ DirPreBase  "weight: 5.967608158858632" ;
++V+3Sg+1+Past:ngan^ DirPreBase  "weight: 6.749788961788975" ;
++V+2Sg+1ua+Past:kanbene^ DirPreBase  "weight: 10.872882937297062" ;
++V+3Sg+1ua+Past:kanbene^ DirPreBase  "weight: 10.467417829188896" ;
++V+3Sg+1ua+Past:nganbene^ DirPreBase  "weight: 10.467417829188896" ;
++V+2Pl+1+Past:kandi^ DirPreBase  "weight: 7+222224696003323" ;
++V+3Pl+1ua+Past:kandi^ DirPreBase  "weight: 6.747766716408207" ;
++V+3Pl+1sg+Past:ngandi^ DirPreBase  "weight: 7.72121586212231" ;
++V+3Pl+1ua+Past:ngandi^ DirPreBase  "weight: 6.747766716408207" ;
 
 LEXICON TransNonPast1Obj
-[V][2sg.1.nonpast]:kan^ DirPreBase  "weight: 5.6153875652692795" ;
-[V][3sg.1pl.nonpast]:kan^ DirPreBase  "weight: 5.6153875652692795" ;
-[V][3sg.1.nonpast]:ngan^ DirPreBase  "weight: 7.123378861366691" ;
-[V][2sg.1ua.nonpast]:kanbene^ DirPreBase  "weight: 10.755099901640678" ;
-[V][3sg.1ua.nonpast]:kanbene^ DirPreBase  "weight: 10.649739385982851" ;
-[V][3sg.1ua.nonpast]:nganbene^ DirPreBase  "weight: 10.649739385982851" ;
-[V][2pl.1.nonpast]:kandi^ DirPreBase  "weight: 6.843076896212532" ;
-[V][3pl.1ua.nonpast]:kandi^ DirPreBase  "weight: 6.2454621423741505" ;
-[V][3pl.1sg.nonpast]:ngandi^ DirPreBase  "weight: 7.044241540807967" ;
-[V][3pl.1ua.nonpast]:ngandi^ DirPreBase  "weight: 6.2454621423741505" ;
++V+2Sg+1+NonPast:kan^ DirPreBase  "weight: 5.6153875652692795" ;
++V+3Sg+1pl+NonPast:kan^ DirPreBase  "weight: 5.6153875652692795" ;
++V+3Sg+1+NonPast:ngan^ DirPreBase  "weight: 7+123378861366691" ;
++V+2Sg+1ua+NonPast:kanbene^ DirPreBase  "weight: 10.755099901640678" ;
++V+3Sg+1ua+NonPast:kanbene^ DirPreBase  "weight: 10.649739385982851" ;
++V+3Sg+1ua+NonPast:nganbene^ DirPreBase  "weight: 10.649739385982851" ;
++V+2Pl+1+NonPast:kandi^ DirPreBase  "weight: 6.843076896212532" ;
++V+3Pl+1ua+NonPast:kandi^ DirPreBase  "weight: 6+2454621423741505" ;
++V+3Pl+1sg+NonPast:ngandi^ DirPreBase  "weight: 7.044241540807967" ;
++V+3Pl+1ua+NonPast:ngandi^ DirPreBase  "weight: 6+2454621423741505" ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -345,100 +321,100 @@ LEXICON TransNonPast1Obj
 !!                                     !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON DirPreBase
-[DIR.towards]:(ku)m^ AspPreBase  "weight: 4.75011604254045" ;
-[DIR.away]:bal^ AspPreBase  "weight: 6.218922587139538" ;
++Dir+Towards:(ku)m^ AspPreBase  "weight: 4.75011604254045" ;
++Dir+Away:bal^ AspPreBase  "weight: 6+218922587139538" ;
 0:0 AspPreBase ;
 
 LEXICON AspPreBase
-[IMM]:h^ Misc1PreBase  "weight: 4.334743113529392" ;
++Imm:h^ Misc1PreBase  "weight: 4+334743113529392" ;
 0:0 Misc1PreBase ;
 
 LEXICON Misc1PreBase
-[ADV.again]:yawoyh^ Misc1PreBase  "weight: 6.089566565925496" ;              ! again
-[ADV.again]:yawoh^ Misc1PreBase  "weight: 6.089566565925496" ;               ! again
-[ADV.together]:djorrk^ Misc1PreBase  "weight: 5.771493279932342" ;           ! together
-[ADV.together]:djarrk^ Misc1PreBase  "weight: 5.771493279932342" ;           ! together
-[ADV.again][ADV.together]:yawoyhdjarrk^ Misc1PreBase "weight: 12.952324478976898" ; ! again together
-[ADV.a.bit]:woh^ Misc1PreBase  "weight: 6.9608599318689155" ;                 ! a bit
-[ADV.at.night]:kak^ Misc1PreBase  "weight: 9.620119968801694" ;              ! at night
-[ADV.differently]:barrkid^ Misc1PreBase  "weight: 12.952324478976898" ;       ! differently
-[ADV.properly]:wernh^ Misc1PreBase  "weight: 6.170132422970106" ;            ! properly
-[ADV.vigorously]:ngudj^ Misc1PreBase  "weight: 8.486416360322314" ;          ! vigorously
-[ADV.in.fear]:kele^ Misc1PreBase  "weight: 7.852458051152699" ;              ! in fear
-[ADV.wrong]:warrebu^ Misc1PreBase  "weight: 12.952324478976898" ;             ! wrong
-[ADJ.wounded]:ngoreng^ Misc1PreBase  "weight: 10.872882937297062" ;           ! do V while wounded
-[ADJ.similar]:rohrouk^ Misc1PreBase  "weight: 9.733448654108697" ;           ! similar
-[ADJ.similar]:rohrok^ Misc1PreBase  "weight: 9.733448654108697" ;            ! similar (alternate spelling)
-[ADJ.cooked]:djoleng^ Misc1PreBase  "weight: 10.755099901640678" ;
-[ASP.now]:bad^ Misc1PreBase  "weight: 8.982032565424776" ;                   ! now
-[ASP.now][ADV.again]:badyawoyh^ Misc1PreBase  "weight: 12.952324478976898" ;       ! now again
-[ASP.now][ADV.again]:badyawoh^ Misc1PreBase  "weight: 12.952324478976898" ;       ! now again
-[ASP.before]:yingkih^ Misc1PreBase  "weight: 6.356543965015586" ;            ! before
-[ASP.almost]:kuyin^ Misc1PreBase  "weight: 9.368805540520787" ;              ! almost
-[ASP.nearly]:barlanh^ Misc1PreBase  "weight: 10.554429206178527" ;            ! nearly
-[QUANT.each]:bebbeh^ Misc1PreBase  "weight: 6.735718377892033" ;             ! bebbeh
-[QUANT.only]:djal^ Misc1PreBase  "weight: 4.36132336041594" ;               ! only
-[QUANT.only][ADV.a.bit]:djalwoh^ Misc1PreBase  "weight: 12.952324478976898" ;      ! only a bit
-[QUANT.many]:mirnde^ Misc1PreBase  "weight: 6.9608599318689155" ;             ! many
++Adv+Again:yawoyh^ Misc1PreBase  "weight: 6.089566565925496" ;              ! again
++Adv+Again:yawoh^ Misc1PreBase  "weight: 6.089566565925496" ;               ! again
++Adv+Together:djorrk^ Misc1PreBase  "weight: 5.771493279932342" ;           ! together
++Adv+Together:djarrk^ Misc1PreBase  "weight: 5.771493279932342" ;           ! together
++Adv+Again+Adv+Together:yawoyhdjarrk^ Misc1PreBase "weight: 12.952324478976898" ; ! again together
++Adv+ABit:woh^ Misc1PreBase  "weight: 6.9608599318689155" ;                 ! a bit
++Adv+AtNight:kak^ Misc1PreBase  "weight: 9.620119968801694" ;              ! at night
++Adv+Differently:barrkid^ Misc1PreBase  "weight: 12.952324478976898" ;       ! differently
++Adv+Properly:wernh^ Misc1PreBase  "weight: 6+170132422970106" ;            ! properly
++Adv+Vigorously:ngudj^ Misc1PreBase  "weight: 8.486416360322314" ;          ! vigorously
++Adv+InFear:kele^ Misc1PreBase  "weight: 7.852458051152699" ;              ! in fear
++Adv+Wrong:warrebu^ Misc1PreBase  "weight: 12.952324478976898" ;             ! wrong
++A+Wounded:ngoreng^ Misc1PreBase  "weight: 10.872882937297062" ;           ! do V while wounded
++A+Similar:rohrouk^ Misc1PreBase  "weight: 9.733448654108697" ;           ! similar
++A+Similar:rohrok^ Misc1PreBase  "weight: 9.733448654108697" ;            ! similar (alternate spelling)
++A+Cooked:djoleng^ Misc1PreBase  "weight: 10.755099901640678" ;
++Asp+Now:bad^ Misc1PreBase  "weight: 8.982032565424776" ;                   ! now
++Asp+Now+Adv+Again:badyawoyh^ Misc1PreBase  "weight: 12.952324478976898" ;       ! now again
++Asp+Now+Adv+Again:badyawoh^ Misc1PreBase  "weight: 12.952324478976898" ;       ! now again
++Asp+Before:yingkih^ Misc1PreBase  "weight: 6+356543965015586" ;            ! before
++Asp+Almost:kuyin^ Misc1PreBase  "weight: 9+368805540520787" ;              ! almost
++Asp+Nearly:barlanh^ Misc1PreBase  "weight: 10.554429206178527" ;            ! nearly
++Quant+Each:bebbeh^ Misc1PreBase  "weight: 6.735718377892033" ;             ! bebbeh
++Quant+Only:djal^ Misc1PreBase  "weight: 4+36132336041594" ;               ! only
++Quant+Only+Adv+ABit:djalwoh^ Misc1PreBase  "weight: 12.952324478976898" ;      ! only a bit
++Quant+Many:mirnde^ Misc1PreBase  "weight: 6.9608599318689155" ;             ! many
 0:0 BenefactPreBase ;
 
 LEXICON BenefactPreBase                         ! benefactive infix makes the verb transitive
 0:0 Misc2PreBase ;
-@P.VALENCE.AUGM@[BEN]:@P.VALENCE.AUGM@marne^ Misc2PreBase  "weight: 3.584809432628716" ;
+@P.VALENCE.AUGM@+Ben:@P.VALENCE.AUGM@marne^ Misc2PreBase  "weight: 3.584809432628716" ;
 
 LEXICON Misc2PreBase
-[QUANT.only]:djal^ AspPreBase2  "weight: 4.36132336041594" ;
-[QUANT.close.up]:darnh^ GINPreBase  "weight: 8.762669736950471" ;
-[QUANT.small]:yaw^ AspPreBase2  "weight: 6.950909601015748" ;
-[QUANT.each]:bebbeh^ AspPreBase2  "weight: 6.735718377892033" ;             ! bebbeh
-[QUANT.many]:mirnde^ AspPreBase2  "weight: 6.9608599318689155" ;             ! many
++Quant+Only:djal^ AspPreBase2  "weight: 4+36132336041594" ;
++Quant+CloseUp:darnh^ GINPreBase  "weight: 8.762669736950471" ;
++Quant+Small:yaw^ AspPreBase2  "weight: 6.950909601015748" ;
++Quant+Each:bebbeh^ AspPreBase2  "weight: 6.735718377892033" ;             ! bebbeh
++Quant+Many:mirnde^ AspPreBase2  "weight: 6.9608599318689155" ;             ! many
 0:0 GINPreBase ;
 
 LEXICON AspPreBase2
-[IMM]:h^ GINPreBase  "weight: 4.334743113529392" ;
++Imm:h^ GINPreBase  "weight: 4+334743113529392" ;
 0:0 GINPreBase ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!                                     !!
-!!   INCORPORATED NOUNS                !!
+!!   INCORPORATED +NS                !!
 !!                                     !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON GINPreBase
-[GIN]:0 NounBase  "weight: 3.424549076399586" ;
++Gin:0 +NBase  "weight: 3.424549076399586" ;
 0 BPINPreBase ;
 
 LEXICON BPINPreBase ! names also fall into this category: any attributes of the person.
-[BPIN]:balem^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:bard^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:berd^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:berl^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:berre^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:bodme^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:bid^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:bininj^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:dad^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:dang^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:dedj^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:denge^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:rrenge^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:dile^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:djen^ AdjPreBase  "weight: 4.704842474691205" ;                                          ! tongue
-[BPIN]:djikka^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kanem^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:keb^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kodj^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kom^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kord^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kuk^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kurlah^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:kurlh^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:milh^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:mim^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:murrng^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:njam^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:nuk^ AdjPreBase  "weight: 4.704842474691205" ;
-[BPIN]:rrulkki^ AdjPreBase  "weight: 4.704842474691205" ;                                    ! internal.sick
-[BPIN]:yidme^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:balem^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:bard^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:berd^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:berl^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:berre^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:bodme^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:bid^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:bininj^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:dad^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:dang^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:dedj^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:denge^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:rrenge^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:dile^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:djen^ AdjPreBase  "weight: 4.704842474691205" ;                                          ! tongue
++Bpin:djikka^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kanem^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:keb^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kodj^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kom^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kord^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kuk^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kurlah^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:kurlh^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:milh^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:mim^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:murrng^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:njam^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:nuk^ AdjPreBase  "weight: 4.704842474691205" ;
++Bpin:rrulkki^ AdjPreBase  "weight: 4.704842474691205" ;                                    ! internal.sick
++Bpin:yidme^ AdjPreBase  "weight: 4.704842474691205" ;
 0:0 SPAPreBase ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -447,9 +423,9 @@ LEXICON BPINPreBase ! names also fall into this category: any attributes of the 
 !!                                     !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON AdjPreBase
-[ADJ.tight]:djokko^ SPAPreBase  "weight: 12.952324478976898" ;
-[ADJ.big]:kimuk^ SPAPreBase  "weight: 12.952324478976898" ;
-[QUANT.many]:wern^ SPAPreBase  "weight: 6.9608599318689155" ;
++A+Tight:djokko^ SPAPreBase  "weight: 12.952324478976898" ;
++A+Big:kimuk^ SPAPreBase  "weight: 12.952324478976898" ;
++Quant+Many:wern^ SPAPreBase  "weight: 6.9608599318689155" ;
 0:0 SPAPreBase ;
 
 LEXICON SPAPreBase
@@ -457,7 +433,7 @@ LEXICON SPAPreBase
 
 LEXICON COMPreBase
 0:0 VerbValencyCheck ;
-@P.VALENCE.AUGM@[COM]:@P.VALENCE.AUGM@yi^ VerbValencyCheck  "weight: 4.568205641786002" ;
+@P.VALENCE.AUGM@+Com:@P.VALENCE.AUGM@yi^ VerbValencyCheck  "weight: 4.568205641786002" ;
 
 LEXICON VerbValencyCheck
 @R.VALENCE.AUGM@ AllVerbs ;
@@ -476,7 +452,7 @@ LEXICON AllVerbs
 LEXICON IntransitiveVerbs
 
 0:0 IrregularVerbsIntr ;                                ! there are a couple irregular intransitive^ Verbs to treat explicitly 
-[VerbRootGuess][GUESS]:[VerbRootGuess] anyVerbPostBase  "weight: 12.952324478976898" ;
++VerbRootGuess+Guess:+VerbRootGuess] anyVerbPostBase  "weight: 12.952324478976898" ;
 babng:babang^ V1PostBase  "weight: 12.952324478976898" ;
 bakme:bakme^ V1PostBase  "weight: 12.952324478976898" ;                                      ! break (intr)
 balewo:balewo^ V3cPostBase  "weight: 12.952324478976898" ;                                    ! clean
@@ -774,7 +750,7 @@ yudyudme:yudyudme^ V1PostBase "weight: 12.952324478976898" ;
 LEXICON TransitiveVerbs
 
 0:0 IrregularVerbsTrns ;                ! there are a couple irregular transitive verbs to treat explicitly 
-[VerbRootGuess][GUESS]:[VerbRootGuess]^ anyVerbPostBase  "weight: 12.952324478976898" ;
++VerbRootGuess+Guess:+VerbRootGuess]^ anyVerbPostBase  "weight: 12.952324478976898" ;
 babbulibu:babbulibu V4bPostBase  "weight: 12.952324478976898" ;
 babma:babma V5cPostBase  "weight: 12.952324478976898" ;
 baddje:baddje^ V5bPostBase  "weight: 12.952324478976898" ;                                    ! bash
@@ -1129,253 +1105,253 @@ LEXICON anyVerbPostBase
 0:0 NonverbalPostBase ;
 
 LEXICON V1PostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:~iyindi^ PERSISTSConj  "weight: 5.73561499226744" ;   
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:~iyindi^ PERSISTSConj  "weight: 5.73561499226744" ;   
 0:0 V1Conj ;
 
 LEXICON V1Conj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@~i^ #  "weight: 3.5563347601140856" ;
-[Imp]:n^ #  "weight: 2.6723201402884977" ;
-[Irr]:+ninj^ #  "weight: 4.711939363460562" ;
-[Irr]:ninj^ #  "weight: 4.711939363460562" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@~i^ #  "weight: 3.5563347601140856" ;
++Imp:n^ #  "weight: 2.6723201402884977" ;
++Irr:+ninj^ #  "weight: 4.711939363460562" ;
++Irr:ninj^ #  "weight: 4.711939363460562" ;
 
 LEXICON V2PostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:~indi^ PERSISTSConj  "weight: 5.73561499226744" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:~indi^ PERSISTSConj  "weight: 5.73561499226744" ;
 0:0 V2Conj ;
 
 LEXICON V2Conj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:men^ #  "weight: 2.6723201402884977" ;
-[Irr]:meninj^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:men^ #  "weight: 2.6723201402884977" ;
++Irr:meninj^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V3aPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
 0:0 V3aConj ;
 
 LEXICON V3aConj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@0^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@0^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yinj^ #  "weight: 4.711939363460562" ; 
++Irr:yi^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V3bPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yinj^ #  "weight: 4.711939363460562" ;
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yinj^ #  "weight: 4.711939363460562" ;
++Irr:yi^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V3cPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yinj^ #  "weight: 4.711939363460562" ;
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@ng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yinj^ #  "weight: 4.711939363460562" ;
++Irr:yi^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V3dPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
 0:0 V3dConj ;
 
 LEXICON V3dConj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yinj^ #  "weight: 4.711939363460562" ; 
++Irr:yi^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V3IrrPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@neng^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yi^ #  "weight: 4.711939363460562" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@neng^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yi^ #  "weight: 4.711939363460562" ;
 
 LEXICON V4aPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:yind^ PERSISTSConj  "weight: 5.73561499226744" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:yind^ PERSISTSConj  "weight: 5.73561499226744" ;
 0:0 V4aConj ;
 
 LEXICON V4aConj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@m^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~om^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@m^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~om^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yinj^ #  "weight: 4.711939363460562" ; 
++Irr:yi^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V4bPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
 0:0 V4bConj ;
 
 LEXICON V4bConj
-[Irr]:+ninj^ #  "weight: 4.711939363460562" ; 
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.NP@[Imp]:@R.TENSE.NP@0^ #  "weight: 2.6723201402884977" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~om^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Irr:+ninj^ #  "weight: 4.711939363460562" ; 
++Irr:yi^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.NP@+Imp:@R.TENSE.NP@0^ #  "weight: 2.6723201402884977" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~om^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
 
 LEXICON V5aPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@y^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yinj^ #  "weight: 4.711939363460562" ; 
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@y^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yinj^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V5bPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:~indi^ PERSISTSConj  "weight: 5.73561499226744" ;
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
++Persist:~indi^ PERSISTSConj  "weight: 5.73561499226744" ;
 0:0 V5bConj ;
 
 LEXICON V5bConj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~i^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
-[Irr]:yinj^ #  "weight: 4.711939363460562" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~i^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yi^ #  "weight: 4.711939363460562" ; 
++Irr:yinj^ #  "weight: 4.711939363460562" ;
 
 LEXICON V5cPostBase
-[RR]:rre^ RRConj  "weight: 4.596944583723264" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~ey^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
-[Imp]:0^ #  "weight: 2.6723201402884977" ;
-[Irr]:yi^ #  "weight: 4.711939363460562" ; 
++RR:rre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@ng^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~ey^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ngi^ #  "weight: 3.5563347601140856" ;
++Imp:0^ #  "weight: 2.6723201402884977" ;
++Irr:yi^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V6aPostBase
-[RR]:ngerre^ RRConj  "weight: 4.596944583723264" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ngen^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@nj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@nginj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@nj^ #  "weight: 3.5563347601140856" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ngeni^ #  "weight: 3.5563347601140856" ;
-[Imp]:ngimen^ #  "weight: 2.6723201402884977" ;
-[Irr]:ngemeninj^ #  "weight: 4.711939363460562" ; 
++RR:ngerre^ RRConj  "weight: 4.596944583723264" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@ngen^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@nj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@nginj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@nj^ #  "weight: 3.5563347601140856" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ngeni^ #  "weight: 3.5563347601140856" ;
++Imp:ngimen^ #  "weight: 2.6723201402884977" ;
++Irr:ngemeninj^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V7aPostBase
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@0^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@0^ #  "weight: 3.5563347601140856" ;
-[Imp]:n^ #  "weight: 2.6723201402884977" ;
-[Irr]:wirrinj^ #  "weight: 4.711939363460562" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@0^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@0^ #  "weight: 3.5563347601140856" ;
++Imp:n^ #  "weight: 2.6723201402884977" ;
++Irr:wirrinj^ #  "weight: 4.711939363460562" ;
 
 LEXICON V8PostBase  
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@ngen^ #  "weight: 2.4315184283770575" ;  
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@y^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@nginj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@y^ #  "weight: 3.5563347601140856" ;
-[Imp]:~un^ #  "weight: 2.6723201402884977" ;
-[Irr]:~uwirrinj^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@ngen^ #  "weight: 2.4315184283770575" ;  
+@R.TENSE.P@+PstPerf:@R.TENSE.P@y^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@nginj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@y^ #  "weight: 3.5563347601140856" ;
++Imp:~un^ #  "weight: 2.6723201402884977" ;
++Irr:~uwirrinj^ #  "weight: 4.711939363460562" ; 
 
 
 LEXICON V9PostBase
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@an^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@i^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@anj^ #  "weight: 3.5563347601140856" ;
-[Imp]:a^ #  "weight: 2.6723201402884977" ;
-[Irr]:~angemeninj^ #  "weight: 4.711939363460562" ; 
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@an^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@i^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@anj^ #  "weight: 3.5563347601140856" ;
++Imp:a^ #  "weight: 2.6723201402884977" ;
++Irr:~angemeninj^ #  "weight: 4.711939363460562" ; 
 
 LEXICON V10PostBase
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:men^ #  "weight: 2.6723201402884977" ;
-[Irr]:=imeninj^ #  "weight: 4.711939363460562" ;
-[Irr]:~imeninj^ #  "weight: 4.711939363460562" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:men^ #  "weight: 2.6723201402884977" ;
++Irr:=imeninj^ #  "weight: 4.711939363460562" ;
++Irr:~imeninj^ #  "weight: 4.711939363460562" ;
 
 
 LEXICON V11PostBase
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@men^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@minj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@meni^ #  "weight: 3.5563347601140856" ;
-[Imp]:mimen^ #  "weight: 2.6723201402884977" ;
-[Irr]:meninj^ #  "weight: 4.711939363460562" ;
-[RR]:merre^ RRConj  "weight: 4.596944583723264" ;
-[PERSIST]:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@men^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@minj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@meni^ #  "weight: 3.5563347601140856" ;
++Imp:mimen^ #  "weight: 2.6723201402884977" ;
++Irr:meninj^ #  "weight: 4.711939363460562" ;
++RR:merre^ RRConj  "weight: 4.596944583723264" ;
++Persist:yindi^ PERSISTSConj  "weight: 5.73561499226744" ;
 
 LEXICON ReVerbs
-@R.TENSE.NP@re[NonPst]:@R.TENSE.NP@(r)e^ #  "weight: 2.4315184283770575" ;                            ! go
-@R.TENSE.P@re[PstPerf]:@R.TENSE.P@wam^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@re[PstImperf]:@R.TENSE.P@(r)ey^ #  "weight: 3.5563347601140856" ;
-re[Imp]:(r)ay^ #  "weight: 12.952324478976898" ;
-re[Irr]:(r)ayinj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@re+NonPst:@R.TENSE.NP@(r)e^ #  "weight: 2.4315184283770575" ;                            ! go
+@R.TENSE.P@re+PstPerf:@R.TENSE.P@wam^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@re+PstImperf:@R.TENSE.P@(r)ey^ #  "weight: 3.5563347601140856" ;
+re+Imp:(r)ay^ #  "weight: 12.952324478976898" ;
+re+Irr:(r)ayinj^ #  "weight: 12.952324478976898" ;
 
 LEXICON NonverbalPostBase
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@minj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:nin^ #  "weight: 2.6723201402884977" ;
-[Irr]:niwirrinj^ #  "weight: 4.711939363460562" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@0^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@minj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:nin^ #  "weight: 2.6723201402884977" ;
++Irr:niwirrinj^ #  "weight: 4.711939363460562" ;
 
 LEXICON IrregularVerbsIntr
-@R.TENSE.NP@bengmid[NonPst]:@R.TENSE.NP@bengmiddan^ #  "weight: 12.952324478976898" ;                ! forget
-@R.TENSE.P@bengmid[PstPerf]:@R.TENSE.P@bengmiddanj^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@bengmid[PstImperf]:@R.TENSE.P@bengmiddangeni^ #  "weight: 12.952324478976898" ;
-bengmid[Imp]:bengmiddangimen^ #  "weight: 12.952324478976898" ;
-bengmid[Irr]:bengmiddangemeninj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@bengmid+NonPst:@R.TENSE.NP@bengmiddan^ #  "weight: 12.952324478976898" ;                ! forget
+@R.TENSE.P@bengmid+PstPerf:@R.TENSE.P@bengmiddanj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@bengmid+PstImperf:@R.TENSE.P@bengmiddangeni^ #  "weight: 12.952324478976898" ;
+bengmid+Imp:bengmiddangimen^ #  "weight: 12.952324478976898" ;
+bengmid+Irr:bengmiddangemeninj^ #  "weight: 12.952324478976898" ;
 
-@R.TENSE.NP@bore[NonPst]:@R.TENSE.NP@bore^ #  "weight: 12.952324478976898" ;                          ! flow (water)
-@R.TENSE.P@bore[PstPerf]:@R.TENSE.P@bowam^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@bore[PstImperf]:@R.TENSE.P@borey^ #  "weight: 12.952324478976898" ;
-bore[Imp]:boray^ #  "weight: 12.952324478976898" ;
-bore[Irr]:borayinj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@bore+NonPst:@R.TENSE.NP@bore^ #  "weight: 12.952324478976898" ;                          ! flow (water)
+@R.TENSE.P@bore+PstPerf:@R.TENSE.P@bowam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@bore+PstImperf:@R.TENSE.P@borey^ #  "weight: 12.952324478976898" ;
+bore+Imp:boray^ #  "weight: 12.952324478976898" ;
+bore+Irr:borayinj^ #  "weight: 12.952324478976898" ;
 
-@R.TENSE.NP@dungre[NonPst]:@R.TENSE.NP@dungre^ #  "weight: 12.952324478976898" ;                     ! movement of the sun
-@R.TENSE.P@dungre[PstPerf]:@R.TENSE.P@dungwam^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@dungre[PstImperf]:@R.TENSE.P@dungrey^ #  "weight: 12.952324478976898" ;
-dungre[Imp]:dungray^ #  "weight: 12.952324478976898" ;
-dungre[Irr]:dungrayinj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@dungre+NonPst:@R.TENSE.NP@dungre^ #  "weight: 12.952324478976898" ;                     ! movement of the sun
+@R.TENSE.P@dungre+PstPerf:@R.TENSE.P@dungwam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@dungre+PstImperf:@R.TENSE.P@dungrey^ #  "weight: 12.952324478976898" ;
+dungre+Imp:dungray^ #  "weight: 12.952324478976898" ;
+dungre+Irr:dungrayinj^ #  "weight: 12.952324478976898" ;
 
-@R.TENSE.NP@kakre[NonPst]:@R.TENSE.NP@kakre^ #  "weight: 12.952324478976898" ;                       ! travel at night
-@R.TENSE.P@kakre[PstPerf]:@R.TENSE.P@kakwam^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@kakre[PstImperf]:@R.TENSE.P@kakrey^ #  "weight: 12.952324478976898" ;
-kakre[Imp]:kakray^ #  "weight: 12.952324478976898" ;
-kakre[Irr]:kakrayinj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@kakre+NonPst:@R.TENSE.NP@kakre^ #  "weight: 12.952324478976898" ;                       ! travel at night
+@R.TENSE.P@kakre+PstPerf:@R.TENSE.P@kakwam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@kakre+PstImperf:@R.TENSE.P@kakrey^ #  "weight: 12.952324478976898" ;
+kakre+Imp:kakray^ #  "weight: 12.952324478976898" ;
+kakre+Irr:kakrayinj^ #  "weight: 12.952324478976898" ;
 
-@R.TENSE.NP@kurlbare[NonPst]:@R.TENSE.NP@kurlbare^ #  "weight: 12.952324478976898" ;                  ! travel at night
-@R.TENSE.P@kurlbare[PstPerf]:@R.TENSE.P@kurlbawam^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@kurlbare[PstImperf]:@R.TENSE.P@kurlbarey^ #  "weight: 12.952324478976898" ;
-kurlbare[Imp]:kurlbaray^ #  "weight: 12.952324478976898" ;
-kurlbare[Irr]:kurlbarayinj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@kurlbare+NonPst:@R.TENSE.NP@kurlbare^ #  "weight: 12.952324478976898" ;                  ! travel at night
+@R.TENSE.P@kurlbare+PstPerf:@R.TENSE.P@kurlbawam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@kurlbare+PstImperf:@R.TENSE.P@kurlbarey^ #  "weight: 12.952324478976898" ;
+kurlbare+Imp:kurlbaray^ #  "weight: 12.952324478976898" ;
+kurlbare+Irr:kurlbarayinj^ #  "weight: 12.952324478976898" ;
 
-@R.TENSE.NP@wohre[NonPst]:@R.TENSE.NP@wohre^ #  "weight: 12.952324478976898" ;                        ! wander, walk around
-@R.TENSE.P@wohre[PstPerf]:@R.TENSE.P@wohwam^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@wohre[PstImperf]:@R.TENSE.P@wohrey^ #  "weight: 12.952324478976898" ;
-wohre[Imp]:wohray^ #  "weight: 12.952324478976898" ;
-wohre[Irr]:wohrayinj^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@wohre+NonPst:@R.TENSE.NP@wohre^ #  "weight: 12.952324478976898" ;                        ! wander, walk around
+@R.TENSE.P@wohre+PstPerf:@R.TENSE.P@wohwam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@wohre+PstImperf:@R.TENSE.P@wohrey^ #  "weight: 12.952324478976898" ;
+wohre+Imp:wohray^ #  "weight: 12.952324478976898" ;
+wohre+Irr:wohrayinj^ #  "weight: 12.952324478976898" ;
 
 LEXICON IrregularVerbsTrns
-@R.TENSE.NP@mulewan[NonPst]:@R.TENSE.NP@mulewan^ #  "weight: 12.952324478976898" ;                    ! inform
-@R.TENSE.P@mulewan[PstPerf]:@R.TENSE.P@mulewam^ #  "weight: 12.952324478976898" ;
-@R.TENSE.P@mulewan[PstImperf]:@R.TENSE.P@mulewani^ #  "weight: 12.952324478976898" ;
+@R.TENSE.NP@mulewan+NonPst:@R.TENSE.NP@mulewan^ #  "weight: 12.952324478976898" ;                    ! inform
+@R.TENSE.P@mulewan+PstPerf:@R.TENSE.P@mulewam^ #  "weight: 12.952324478976898" ;
+@R.TENSE.P@mulewan+PstImperf:@R.TENSE.P@mulewani^ #  "weight: 12.952324478976898" ;
 
 LEXICON RRConj
-@R.TENSE.NP@[NonPst]:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
-@R.TENSE.P@[PstPerf]:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
-@R.TENSE.P@[PstImperf]:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
-[Imp]:~emen^ #  "weight: 2.6723201402884977" ;
-[Irr]:~imeninj^ #  "weight: 4.711939363460562" ;
+@R.TENSE.NP@+NonPst:@R.TENSE.NP@n^ #  "weight: 2.4315184283770575" ;
+@R.TENSE.P@+PstPerf:@R.TENSE.P@~inj^ #  "weight: 2.6188743467322175" ;
+@R.TENSE.P@+PstImperf:@R.TENSE.P@ni^ #  "weight: 3.5563347601140856" ;
++Imp:~emen^ #  "weight: 2.6723201402884977" ;
++Irr:~imeninj^ #  "weight: 4.711939363460562" ;
 

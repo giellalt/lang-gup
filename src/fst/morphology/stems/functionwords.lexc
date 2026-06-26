@@ -1,25 +1,19 @@
-Multichar_Symbols
- rr rd rdd dj bb kk dd djdj
- ng rn rl rr nj
- [ADJ] [ADJ.loc] [ADJ.pred]
- @P.TYPE.N@ @R.TYPE.N@
- (ku) (rr) (r) (~~)
- 
-LEXICON Root
-[PRON]:0 Pronouns ;
-[PRON.rel]:0 RelPronouns ;
-[PRON.refl]:0 ReflPronouns ;
-[QUANT]:0 Quant ;
-[PREP]:0 Prep ;
-[PRON.poss]:0 PossPronouns ;
-[PART]:0 Particles ;
-[NEG]:0 NegationParticles ;
-[LOC]:0 Locatives ;
-[DEM.loc]:0 DemonstrativeLocatives ;
-[DEM]:0 Demonstratives ;
-[INTERJ]:0 Interjections ;
-[IDEOPHONE]:0 Ideophones ;
-[CONJ]:0 Conjunctions ;
+LEXICON functionwords
+
++Pron:0 Pronouns ;
++Pron+Rel:0 RelPronouns ;
++Pron+Refl:0 ReflPronouns ;
++Quant:0 Quant ;
++Pr:0 Prep ;
++Pron+Poss:0 PossPronouns ;
++Part:0 Particles ;
++NEG:0 NegationParticles ;
++Loc:0 Locatives ;
++Dem+Loc:0 DemonstrativeLocatives ;
++Dem:0 Demonstratives ;
++Interj:0 Interjections ;
++Ideophone:0 Ideophones ;
++CC:0 Conjunctions ;
 0:0 Interrogatives ;
 
 LEXICON Conjunctions
@@ -86,13 +80,13 @@ LEXICON Interjections
 0:yowayh # ;
 
 LEXICON Interrogatives
-[INTERROG.what]:njale # ;
-[INTERROG.why]:njalekenh # ;
-[INTERROG.who.2sg]:yingale # ;
-[INTERROG.which.III]:manngale # ;
-[INTERROG.which.IV]:kunngale # ;
-[INTERROG.which.I]:nangale # ;
-[INTERROG.which.II]:ngalngale # ;
++Interr+What:njale # ;
++Interr+Why:njalekenh # ;
++Interr+Who+2Sg:yingale # ;
++Interr+Which+III:manngale # ;
++Interr+Which+IV:kunngale # ;
++Interr+Which+I:nangale # ;
++Interr+Which+II:ngalngale # ;
 
 LEXICON Locatives
 0:bewh # ;
