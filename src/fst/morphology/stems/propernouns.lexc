@@ -1,7 +1,0 @@
-!! Propre nouns
-!! Proper  nouns in the Gunwinggu language are names of things.
-
-LEXICON ProperNouns
-Propernoun+N:Propernoun    ProperNounCases   ;
-
-! vim: set ft=xfst-lexc:
