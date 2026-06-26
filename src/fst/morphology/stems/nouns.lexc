@@ -8,9 +8,6 @@ LEXICON NounGenderPreBase
 0:0^ NominalDeverbals ;
 0:0^ PlaceNouns ;
 
-LEXICON NominalPrefixes
-+Loc:ku^  All+NClasses ; ! locative prefix, ie kuwardde == escarpment, or "the rocky place"
-+Clitic+In:mi^ All+NClasses ; ! mingarre: in the vine forest, mikurrurla: in the sea, mikuwardde: in the rocks 
 
 
 
