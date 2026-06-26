@@ -15,3 +15,6 @@ p:pp	2
 t:tt	2
 k:kk	2
 r:rr	2
+d:rr	2
+n:rn	2
+d:rd	2
