@@ -397,11 +397,12 @@ LEXICON Root
 !! The word forms in Gunwinggu language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
 
+functionwords ;
+
 @P.TYPE.V@ TSOPreBase ;
 AllNounClasses ;
 NounGenderPreBase ;
 NominalPrefixes ;
-functionwords ;
 AdjBase ;
 AdvBase ;
 Punctuation ;

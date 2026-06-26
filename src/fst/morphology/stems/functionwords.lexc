@@ -1,169 +1,205 @@
 LEXICON functionwords
 
-+Pron:0 Pronouns ;
-+Pron+Rel:0 RelPronouns ;
-+Pron+Refl:0 ReflPronouns ;
-+Quant:0 Quant ;
-+Pr:0 Prep ;
-+Pron+Poss:0 PossPronouns ;
-+Part:0 Particles ;
-+NEG:0 NegationParticles ;
-+Loc:0 Locatives ;
-+Dem+Loc:0 DemonstrativeLocatives ;
-+Dem:0 Demonstratives ;
-+Interj:0 Interjections ;
-+Ideophone:0 Ideophones ;
-+CC:0 Conjunctions ;
-0:0 Interrogatives ;
+ Pronouns ;
+ RelPronouns ;
+ ReflPronouns ;
+ Quant ;
+ Prep ;
+ PossPronouns ;
+ Particles ;
+ NegationParticles ;
+ Locatives ;
+ DemonstrativeLocatives ;
+ Demonstratives ;
+ Interjections ;
+ Ideophones ;
+ Conjunctions ;
+ Interrogatives ;
 
 LEXICON Conjunctions
-0:ba # ;
-0:badbu # ;
-0:bu # ;
-0:dja # ;
-0:la # ;
-0:mak # ;
-0:wanjh # ;
-0:yika # ;
-0:yikahwi # ;
-0:yiman # ;
+ba cc ;
+badbu cc ;
+bu cc ;
+dja cc ;
+la cc ;
+mak cc ;
+wanjh cc ;
+yika cc ;
+yikahwi cc ;
+yiman cc ;
+
+LEXICON cc
++CC: # ;
 
 LEXICON Demonstratives 
-0:bukka # ;
-0:kunekke # ;
-0:kunu # ;
-0:makka # ;
-0:manekke # ;
-0:mani # ;
-0:namekke # ;
-0:ngalbu # ;
+bukka dem ;
+kunekke dem ;
+kunu dem ;
+makka dem ;
+manekke dem ;
+mani dem ;
+namekke dem ;
+ngalbu dem ;
+
+LEXICON dem 
++Dem: # ;
 
 LEXICON DemonstrativeLocatives
-0:kondah # ;
-0:kamekke # ;
+kondah demloc ;
+kamekke demloc ;
+
+LEXICON demloc
++Dem+Loc: # ;
 
 LEXICON Ideophones
-0:dilh # ;
-0:kurruwirluk # ;
+dilh ip ;
+kurruwirluk ip ;
+
+LEXICON ip
++Ideophone: # ;
 
 LEXICON Interjections
-0:aba # ;
-0:adjuh # ;
-0:awurd # ;
-0:bawh # ;
-0:bobo # ;
-0:bonj # ;
-0:burrkyak # ;
-0:kab # ;
-0:kah # ;
-0:kare # ;
-0:karrimen # ;
-0:kayakki # ;
-0:kek # ;
-0:ken # ;
-0:kornbayeng # ;
-0:kub # ;
-0:larrk # ;
-0:ma # ;
-0:med # ;
-0:ngakukwarre # ;
-0:ngamed # ;
-0:nja # ;
-0:njamed # ;
-0:njonj # ;
-0:nuk # ;
-0:warddaw # ;
-0:waw # ;
-0:wurra # ;
-0:ya # ;
-0:yoh # ;
-0:yowayh # ;
+aba ij ;
+adjuh ij ;
+awurd ij ;
+bawh ij ;
+bobo ij ;
+bonj ij ;
+burrkyak ij ;
+kab ij ;
+kah ij ;
+kare ij ;
+karrimen ij ;
+kayakki ij ;
+kek ij ;
+ken ij ;
+kornbayeng ij ;
+kub ij ;
+larrk ij ;
+ma ij ;
+med ij ;
+ngakukwarre ij ;
+ngamed ij ;
+nja ij ;
+njamed ij ;
+njonj ij ;
+nuk ij ;
+warddaw ij ;
+waw ij ;
+wurra ij ;
+ya ij ;
+yoh ij ;
+yowayh ij ;
+
+LEXICON ij
++Interj: # ;
 
 LEXICON Interrogatives
-+Interr+What:njale # ;
-+Interr+Why:njalekenh # ;
-+Interr+Who+2Sg:yingale # ;
-+Interr+Which+III:manngale # ;
-+Interr+Which+IV:kunngale # ;
-+Interr+Which+I:nangale # ;
-+Interr+Which+II:ngalngale # ;
+njale+Interr+What:njale # ;
+njalekenh+Interr+Why:njalekenh # ;
+yingale+Interr+Who+2Sg:yingale # ;
+manngale+Interr+Which+III:manngale # ;
+kunngale+Interr+Which+IV:kunngale # ;
+nangale+Interr+Which+I:nangale # ;
+ngalngale+Interr+Which+II:ngalngale # ;
 
 LEXICON Locatives
-0:bewh # ;
-0:kakbi # ;
-0:karrikad # ;
-0:kore # ;
-0:koyek # ;
-0:kuberrk # ;
-0:kubodme # ;
-0:kudjakku # ;
-0:kudjarrirn # ;
-0:kukadjid # ;
-0:kukun # ;
-0:kurih # ;
-0:kurorre # ;
-0:kururrk # ;
-0:kuwardderurrk # ;
-0:nabeh # ;
-0:walem # ;
+bewh loc ;
+kakbi loc ;
+karrikad loc ;
+kore loc ;
+koyek loc ;
+kuberrk loc ;
+kubodme loc ;
+kudjakku loc ;
+kudjarrirn loc ;
+kukadjid loc ;
+kukun loc ;
+kurih loc ;
+kurorre loc ;
+kururrk loc ;
+kuwardderurrk loc ;
+nabeh loc ;
+walem loc ;
+
+LEXICON loc
++Loc: # ;
 
 LEXICON NegationParticles
-0:minj # ;
-0:yuwn # ;
+minj neg ;
+yuwn neg ;
+
+LEXICON neg 
++Neg: # ;
 
 LEXICON Particles
-0:djaying # ;
-0:warrekah # ;
-0:yimankek # ;
+djaying p ;
+warrekah p ;
+yimankek p ;
+
+LEXICON p
++Part: # ;
 
 LEXICON Prep
-0:dorrengh #;
+dorrengh+Pr:dorrengh #;
 
 LEXICON PossPronouns
-0:kadberre # ;
-0:karrewoneng # ;
-0:ke # ;
-0:ngadberre # ;
-0:ngalengarre # ;
-0:ngardduk # ;
-0:ngarrku # ;
-0:ngudberre # ;
-0:ngudda # ;
-0:ngurrewoneng # ;
-0:nuye # ;
+kadberre poss ;
+karrewoneng poss ;
+ke poss ;
+ngadberre poss ;
+ngalengarre poss ;
+ngardduk poss ;
+ngarrku poss ;
+ngudberre poss ;
+ngudda poss ;
+ngurrewoneng poss ;
+nuye poss ;
+
+LEXICON poss
++Pron+Poss: # ;
 
 LEXICON Pronouns ! Unattached Pronouns
-0:kuni # ;
-0:baleh # ;
-0:bedberre # ;
-0:bedda # ;
-0:bedman # ;
-0:berrewoneng # ;
-0:nahni # ;
-0:nakka # ;
-0:ngad # ;
-0:ngalekke # ;
-0:ngaleng # ;
-0:ngali # ;
-0:ngalkka # ;
-0:ngaye # ;
-0:ngudda # ;
-0:njale # ;
-0:njalehnjale # ;
-0:nungan # ;
-0:nungka # ;
+kuni pron ;
+baleh pron ;
+bedberre pron ;
+bedda pron ;
+bedman pron ;
+berrewoneng pron ;
+nahni pron ;
+nakka pron ;
+ngad pron ;
+ngalekke pron ;
+ngaleng pron ;
+ngali pron ;
+ngalkka pron ;
+ngaye pron ;
+ngudda pron ;
+njale pron ;
+njalehnjale pron ;
+nungan pron ;
+nungka pron ;
+
+LEXICON pron
++Pron: # ;
 
 LEXICON Quant
-0:moken # ;
+moken+Quant:moken # ;
 
 LEXICON ReflPronouns
-0:ngadman # ;
-0:ngalengman # ;
-0:ngayeman # ;
-0:ngudman # ;
-0:yingan # ;
+ngadman refl ;
+ngalengman refl ;
+ngayeman refl ;
+ngudman refl ;
+yingan refl ;
+
+LEXICON refl
++Pron+Refl: # ;
 
 LEXICON RelPronouns ! relative pronouns
-0:kunubewu # ;
-0:manbu # ;
-0:nawu # ;
+kunubewu rel ;
+manbu rel ;
+nawu rel ;
+
+LEXICON rel
++Pron+Rel: # ;
