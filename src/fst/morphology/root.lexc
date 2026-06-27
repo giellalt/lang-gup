@@ -317,7 +317,11 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!≈ @CODE@
 +v1
 +v2
 
-
++CLB
++PUNCT
++LEFT
++RIGHT
++MIDDLE
 
 !! used to control hyphenation
 ∑ !!≈ * **@CODE@** = trigger for hyphen that does not work like hyphenation
