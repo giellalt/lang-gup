@@ -182,3 +182,4 @@ bygg
 generated*
 pipeline.json
 test-suite.log
+*.pyc
